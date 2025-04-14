@@ -1,1 +1,1 @@
-# TP-Net
+# Deep temporal probe network
