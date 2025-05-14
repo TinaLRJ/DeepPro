@@ -30,14 +30,14 @@ def inplace_relu(m):
 
 def parse_args():
     parser = argparse.ArgumentParser('Model')
-    parser.add_argument('--model', type=str, default='TimePoint2_DGConv', help='model name [default: TimePoint2_GD, TimePoint2_DGConv]')
+    parser.add_argument('--model', type=str, default='DeepPro', help='model name [default: DeepPro, DeepPro_Plus]')
     parser.add_argument('--batch_size', type=int, default=4, help='Batch Size during training [default: 16]')
     parser.add_argument('--epoch', default=32, type=int, help='Epoch to run [default: 32]')
     parser.add_argument('--learning_rate', default=0.001, type=float, help='Initial learning rate [default: 0.001]')
     parser.add_argument('--gpu', type=str, default='0', help='GPU to use [default: GPU 0]')
     parser.add_argument('--gpu_num', type=int, default=1, help='GPU to use')
     parser.add_argument('--optimizer', type=str, default='Adam', help='Adam or SGD [default: Adam]')
-    parser.add_argument('--datapath', type=str, default='/autodl-tmp/NUDT-MIRSDT/', help='Data path: /home/ma-user/work/data/NUDT-MIRSDT/')
+    parser.add_argument('--datapath', type=str, default='./dataset/NUDT-MIRSDT/', help='Data path: ./dataset/NUDT-MIRSDT/')
     parser.add_argument('--log_dir', type=str, default=None, help='Log path [default: None]')
     parser.add_argument('--savepath', type=str, default='./log/', help='Save path')
     parser.add_argument('--decay_rate', type=float, default=1e-4, help='weight decay [default: 1e-4]')
@@ -70,7 +70,7 @@ def main(args):
     experiment_dir = experiment_dir.joinpath('sem_seg')
     experiment_dir.mkdir(exist_ok=True)
     if args.log_dir is None:
-        experiment_dir = experiment_dir.joinpath(timestr+'__SoftLoUloss_DiffConv1+DGConv234_AttV1_NewTrainDL')   ## 文件夹命名 备注 +'__SoftLoUloss_AttV1' '__AttV2'
+        experiment_dir = experiment_dir.joinpath(timestr + '__' + args.model + '_SoftLoUloss')   ## 文件夹命名
     else:
         experiment_dir = experiment_dir.joinpath(args.log_dir)
     experiment_dir.mkdir(exist_ok=True)
