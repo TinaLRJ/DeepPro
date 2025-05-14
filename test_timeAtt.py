@@ -31,8 +31,8 @@ def parse_args():
     parser.add_argument('--gpu', type=str, default='0', help='specify gpu device')
     parser.add_argument('--seqlen', type=int, default=100, help='Frame number as an input [default: 100]')
     parser.add_argument('--num_point', type=int, default=100000, help='Point Number [default: 4096]')
-    parser.add_argument('--datapath', type=str, default='/autodl-tmp/NUDT-MIRSDT/', help='Data path: /home/ma-user/work/data/NUDT-MIRSDT/')
-    parser.add_argument('--log_dir', type=str, default='2023-12-28_21-22__SoftLoUloss_DiffConv1+DGConv234_AttV1_NewTrainDL', help='experiment root')   ## required=True
+    parser.add_argument('--datapath', type=str, default='./dataset/NUDT-MIRSDT/', help='Data path: ./dataset/NUDT-MIRSDT/')
+    parser.add_argument('--log_dir', type=str, default='2024-12-28_21-22__DeepPro_SoftLoUloss', help='experiment root')   ## required=True
     parser.add_argument('--visual', action='store_true', default=True, help='visualize result [default: False]')
     parser.add_argument('--threshold', type=float, default=0.01, help='Threshold of segmentation [default: 0.01]')
     parser.add_argument('--threshold_eval', type=float, default=0.5, help='Threshold in evaluation [default: 0.5]')
@@ -119,8 +119,6 @@ def main(args):
             seq_midpred_all = []   ## b, t, h, w
             targets_all     = []
             centroids_all   = []
-            # if seq_idx < 19:
-            #     continue
             for i, (images, targets, centroids, first_end) in enumerate(seq_dataloader):
                 images, targets, centroids = images.float().cuda(), targets.float().cuda(), centroids.float().cuda()
                 first_frame, end_frame = first_end
