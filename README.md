@@ -17,6 +17,7 @@ We divide the test set into two subsets according to their SNR ((0, 3], (3, 10))
 
 In the test set, targets in 8 sequences are so weak (SNR lower than 3). It is very challenging to detect these targets. The test set includes Sequence[47, 56, 59, 76, 92, 101, 105, 119].
 
+Other datasets include NUDT-MIRSDT-Noise dataset, IRSDT dataset and [RGBT-Tiny](https://github.com/XinyiYing/RGBT-Tiny) dataset.
 
 ## Train
 ```bash
@@ -37,7 +38,7 @@ python test.py --seqlen 40 --datapath [dataset path] --dataset [dataset name] --
 
 #### Quantative Results 
 
-The comparison results of computational complexity and computational efficiency are as follows:
+The comparison results of computational complexity and computational efficiency are as follows,
 
 | Model         | Params | FPS | GFLOPs (480*720) |
 | ------------- |:------:|:---:|:----------------:|
@@ -83,7 +84,11 @@ on NUDT-MIRSDT-Noise
 
 ## Citiation
 ```
-
+@article{li2023direction,
+  title={Direction-Coded Temporal U-Shape Module for Multiframe Infrared Small Target Detection.},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2023}
+}
 ```
 <br>
 
