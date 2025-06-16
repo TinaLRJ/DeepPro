@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+# from 2023TNNLS Direction-coded Temporal U-shape Module for Multiframe Infrared Small Target Detection
 
 
 class HPM_loss(nn.Module):
