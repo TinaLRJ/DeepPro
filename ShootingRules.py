@@ -40,8 +40,8 @@ class ShootingRules(nn.Module):
             TgtNum += len(props)
             #####################################################################
             # according to label(the lightest pixels)
-            LocLen1 = 1
-            LocLen2 = 4
+            LocLen1 = 2  # 1
+            LocLen2 = 5  # 4
 
             Box2_map = np.ones(output_one.shape)
             for i_tgt in range(len(props)):
