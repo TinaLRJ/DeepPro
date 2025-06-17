@@ -1,6 +1,7 @@
 # Probing Deep into Temporal Profile Makes the Infrared Small Target Detector Much Better
 
 Pytorch implementation of our deep temporal probe network (DeepPro).&nbsp;[**[Paper]**](https://arxiv.org/pdf/2506.12766)
+Our work is currently under peer review.
 
 
 ## Requirements
