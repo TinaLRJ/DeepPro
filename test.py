@@ -20,7 +20,7 @@ from ShootingRules import ShootingRules
 from sklearn.metrics import auc
 from collections import OrderedDict
 from thop import profile, clever_format
-from attribution.core import IR_Integrated_gradient, MeanLinearPath, ZeroLinearPath
+# from attribution.core import IR_Integrated_gradient, MeanLinearPath, ZeroLinearPath
 from write_results import writeNUDTMIRSDT_ROC, writeMIRST_ROC
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -120,8 +120,8 @@ def main(args):
         pixelsNumber = np.zeros(len(TEST_DATASET))
 
 
-        if args.attribution:
-            path_interpolation_func = ZeroLinearPath(fold=50)
+        # if args.attribution:
+        #     path_interpolation_func = ZeroLinearPath(fold=50)
 
         log_string('---- EVALUATION----')
 
@@ -139,7 +139,7 @@ def main(args):
                     paths = [os.path.join(TEST_DATASET.seq_names[seq_idx], '%05d.png' % (fi+1))
                              for fi in range(first_frame, end_frame+1)]
                     savepath = os.path.join(experiment_dir, 'Attribution_ZeroLinearPath_0.1')
-                    seq_midpred = IR_Integrated_gradient(images, targets, (paths, args.dataset, savepath), detector, path_interpolation_func)
+                    # seq_midpred = IR_Integrated_gradient(images, targets, (paths, args.dataset, savepath), detector, path_interpolation_func)
 
                 else:
                     _, seq_midpred = detector(images)   ## b, t, h, w
