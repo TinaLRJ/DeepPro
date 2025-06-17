@@ -2,7 +2,11 @@
 
 Pytorch implementation of our deep temporal probe network (DeepPro).&nbsp;[**[Paper]**](https://arxiv.org/pdf/2506.12766)
 
-Our work is currently under peer review.
+Our work is currently under peer review. The contributions of this paper are as follows:
+
+### We reveal some new insights from a more crucial profile (i.e., temporal profile): long-term temporal information is much more essential for IRST detection, which includes global temporal saliency of target signals and correlation information between different signals. We validated the importance of the temporal profile in IRST detection, by developing the first predictive attribution tool.
+### Inspired by our research, we remodel the IRST detection task as a one-dimensional signal anomaly detection task. Then, we propose an IRST detection network (i.e., DeepPro) to leverage the essential temporal profile information with multiply-add operations only in the time dimension.
+### Experimental results show that DeepPro not only achieves a significant performance improvement in IRST detection with extremely high efficiency and continuity, but also has high robustness to dim targets and scenes with strong noise.
 
 
 ## Requirements
