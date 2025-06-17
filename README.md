@@ -84,10 +84,14 @@ on NUDT-MIRSDT-Noise
 
 ## Citiation
 ```
-@article{li2023direction,
-  title={Direction-Coded Temporal U-Shape Module for Multiframe Infrared Small Target Detection.},
-  journal={IEEE Transactions on Neural Networks and Learning Systems},
-  year={2023}
+@misc{li2025probingdeeptemporalprofile,
+      title={Probing Deep into Temporal Profile Makes the Infrared Small Target Detector Much Better}, 
+      author={Ruojing Li and Wei An and Xinyi Ying and Yingqian Wang and Yimian Dai and Longguang Wang and Miao Li and Yulan Guo and Li Liu},
+      year={2025},
+      eprint={2506.12766},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.12766}, 
 }
 ```
 <br>
