@@ -143,7 +143,8 @@ def main(args):
 
                 else:
                     _, seq_midpred = detector(images)   ## b, t, h, w
-                    seq_midpred = torch.sigmoid(seq_midpred)
+                    seq_midpred = torch.sigmoid(seq_midpred).data.cpu()
+                    targets = targets.data.cpu()
 
                     if i == 0:
                         seq_midpred_all = seq_midpred
@@ -161,8 +162,8 @@ def main(args):
 
             if not args.attribution:
                 ############### for IoU ###############
-                pred_choice_mid = (seq_midpred_all.data.cpu().numpy() > args.threshold_eval) * 1.
-                batch_label     = targets_all.data.cpu().numpy()
+                pred_choice_mid = (seq_midpred_all.numpy() > args.threshold_eval) * 1.
+                batch_label     = targets_all.numpy()
                 total_intersection_mid += np.sum(pred_choice_mid * batch_label)
                 total_union_mid += ((pred_choice_mid + batch_label) > 0).astype(np.float32).sum()
 
@@ -170,8 +171,8 @@ def main(args):
                 _, t, h, w = seq_midpred_all.size()
                 pixelsNumber[seq_idx] += t * h * w
                 for ti in range(t):
-                    midpred_ti = seq_midpred_all[:, ti, :, :].data.cpu().numpy().copy()
-                    centroid_ti  = centroids_all[:, ti, :, :].data.cpu().numpy().copy()
+                    midpred_ti = seq_midpred_all[:, ti, :, :].numpy().copy()
+                    centroid_ti  = centroids_all[:, ti, :, :].numpy().copy()
                     for th_i in range(len(Th_Seg)):
                         FalseNum, TrueNum, TgtNum = eval(midpred_ti, centroid_ti, Th_Seg[th_i])
                         FalseNumAll[seq_idx, th_i] = FalseNumAll[seq_idx, th_i] + FalseNum
