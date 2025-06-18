@@ -45,7 +45,7 @@ def parse_args():
     parser.add_argument('--batch_size', type=int, default=4, help='Batch Size during training [default: 16]')
     parser.add_argument('--epoch', default=32, type=int, help='Epoch to run [default: 32]')
     parser.add_argument('--learning_rate', default=0.001, type=float, help='Initial learning rate [default: 0.001]')
-    parser.add_argument('--gpu', type=str, default='3', help='GPU to use [default: GPU 0]')
+    parser.add_argument('--gpu', type=str, default='0', help='GPU to use [default: GPU 0]')
     parser.add_argument('--gpu_num', type=int, default=1, help='GPU to use')
     parser.add_argument('--optimizer', type=str, default='Adam', help='Adam or SGD [default: Adam]')
     parser.add_argument('--datapath', type=str, default='/data/lrj/data/NUDT-MIRSDT-Noise/NUDT-MIRSDT-Noise20.0_FJY(g0.27-o2.5)')
