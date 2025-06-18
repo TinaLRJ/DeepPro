@@ -127,13 +127,13 @@ def main(args):
     MODEL = importlib.import_module(args.model)
     shutil.copy('networks/models/%s.py' % args.model, str(experiment_dir))
 
-    detector = MODEL.generator(NUM_CLASSES, SEQ_LEN, SEQ_LEN)
+    detector = MODEL.detector(NUM_CLASSES, SEQ_LEN, SEQ_LEN)
     if args.gpu_num > 1:
         detector = torch.nn.DataParallel(detector)#, device_ids=list(np.arange(args.gpu_num)))
     detector = detector.cuda()
-    # criterion = MODEL.g_loss().cuda()
-    # criterion = MODEL.g_HAMloss().cuda()
-    criterion = MODEL.g_SoftLoUloss().cuda()
+    # criterion = MODEL.bceloss().cuda()
+    # criterion = MODEL.HAMloss().cuda()
+    criterion = MODEL.SoftLoUloss().cuda()
 
     if args.optimizer == 'Adam':
         optimizer = torch.optim.Adam(
