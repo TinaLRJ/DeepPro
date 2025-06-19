@@ -27,6 +27,9 @@ class TrainSeqDataLoader(Dataset):
         elif dataset == 'RGB-T':
             self.train_mean = 85.0799
             self.train_std = 47.4845
+        elif dataset == 'SatVideoIRSDT':
+            self.train_mean = 111.47
+            self.train_std = 22.43
 
     def __len__(self):
         return int(len(self.samplelist) * self.sample_rate)
@@ -46,6 +49,7 @@ class TrainSeqDataLoader(Dataset):
         # elif self.dataset == 'RGB-T':
         #     label = label.resize([480, 480])
         label = np.array(label, dtype=np.float32) / 255.
+        label[label > 0] = 1.
         label = np.expand_dims(label, axis=0)
 
         return image, label
@@ -112,7 +116,7 @@ class TrainSeqDataLoader(Dataset):
 
 class TrainIRSeqDataLoader(TrainSeqDataLoader):
     def __init__(self, dataset='NUDT-MIRSDT', data_root='./datasets/IRSeq', seq_len=100, sample_rate=0.1, patch_size=None, transform=None):
-        if 'NUDT-MIRSDT' in dataset or dataset == 'RGB-T':
+        if 'NUDT-MIRSDT' in dataset or dataset == 'RGB-T' or dataset == 'SatVideoIRSDT':
             self.seq_list_file = os.path.join(data_root, 'train.txt')
         elif dataset == 'IRDST-simulation':
             self.seq_list_file = os.path.join(data_root, 'img_idx/train_IRDST-simulation.txt')
@@ -137,6 +141,11 @@ class TrainIRSeqDataLoader(TrainSeqDataLoader):
             if dataset == 'RGB-T':
                 image_root = os.path.join(data_root, 'train2017', seq_name, '01')
                 label_root = os.path.join(data_root, 'segmentations', seq_name)
+                images = np.sort(os.listdir(image_root))
+                labels = np.sort(os.listdir(label_root))
+            if dataset == 'SatVideoIRSDT':
+                image_root = os.path.join(data_root, 'train', seq_name, 'img')
+                label_root = os.path.join(data_root, 'train', seq_name, 'mask')
                 images = np.sort(os.listdir(image_root))
                 labels = np.sort(os.listdir(label_root))
 
