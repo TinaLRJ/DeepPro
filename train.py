@@ -48,7 +48,7 @@ def parse_args():
     parser.add_argument('--gpu', type=str, default='0', help='GPU to use [default: GPU 0]')
     parser.add_argument('--gpu_num', type=int, default=1, help='GPU to use')
     parser.add_argument('--optimizer', type=str, default='Adam', help='Adam or SGD [default: Adam]')
-    parser.add_argument('--datapath', type=str, default='/data/lrj/data/NUDT-MIRSDT-Noise/NUDT-MIRSDT-Noise20.0_FJY(g0.27-o2.5)')
+    parser.add_argument('--datapath', type=str, default='./datasets/NUDT-MIRSDT')
     parser.add_argument('--dataset', type=str, default='NUDT-MIRSDT', help='dataset name [default: NUDT-MIRSDT, RGB-T]')
     parser.add_argument('--log_dir', type=str, default=None, help='Log path [default: None]')
     parser.add_argument('--savepath', type=str, default='./log/', help='Save path [default: ./log/]')
@@ -57,7 +57,7 @@ def parse_args():
     parser.add_argument('--patch_size', type=int, default=128, help='Patch Size for train generator [default: 128, 72]')
     parser.add_argument('--step_size', type=int, default=10, help='Decay step for lr decay [default: every 10 epochs]')
     parser.add_argument('--sample_rate', type=int, default=0.1, help='Sampling rate for training [default: 0.1(NUDT-MIRSDT), '
-                                                                     '0.03(IRDST), 0.05(RGB-T)]')
+                                                                     '0.03(IRDST), 0.05(RGB-T), 0.04(SatVideoIRSDT)]')
     parser.add_argument('--lr_decay', type=float, default=0.7, help='Decay rate for lr decay [default: 0.7]')
     parser.add_argument('--threshold', type=float, default=0.01, help='Threshold of segmentation [default: 0.01]')
     parser.add_argument('--threshold_eval', type=float, default=0.3, help='Threshold in evaluation [default: 0.5]')
