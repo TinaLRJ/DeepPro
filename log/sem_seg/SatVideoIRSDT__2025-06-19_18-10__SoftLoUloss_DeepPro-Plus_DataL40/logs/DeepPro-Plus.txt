@@ -1,0 +1,367 @@
+2025-06-19 18:10:57,626 - Model - INFO - PARAMETER ...
+2025-06-19 18:10:57,627 - Model - INFO - Namespace(batch_size=4, datapath='/gpfs3/LRJ/data/SatVideoIRSDT', dataset='SatVideoIRSDT', decay_rate=0.0001, epoch=40, gpu='0', gpu_num=2, learning_rate=0.001, log_dir=None, lr_decay=0.7, model='DeepPro-Plus', optimizer='Adam', patch_size=128, sample_rate=0.04, savepath='./log/', seqlen=40, step_size=10, threshold=0.01, threshold_eval=0.3)
+2025-06-19 18:11:34,046 - Model - INFO - The number of training data is: 3218
+2025-06-19 18:11:34,046 - Model - INFO - The number of test data is: 200 sequences
+2025-06-19 18:11:34,934 - Model - INFO - No existing model, starting training from scratch...
+2025-06-19 18:11:34,934 - Model - INFO - **** Epoch 1 (1/40) ****
+2025-06-19 18:11:34,934 - Model - INFO - Learning rate:0.001000
+2025-06-19 18:39:53,538 - Model - INFO - Training mean loss: 0.936973
+2025-06-19 18:39:53,539 - Model - INFO - Training accuracy (IoU) of prediction: 0.001290
+2025-06-19 18:39:53,540 - Model - INFO - ---- EPOCH 001 EVALUATION ----
+2025-06-19 18:44:37,136 - Model - INFO - Eval mean loss: 0.836649
+2025-06-19 18:44:37,136 - Model - INFO - Eval avg class IoU of prediction: 0.191144
+2025-06-19 18:44:37,136 - Model - INFO - Save model...
+2025-06-19 18:44:37,136 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth
+2025-06-19 18:44:37,166 - Model - INFO - Saving model....
+2025-06-19 18:44:37,166 - Model - INFO - Best mIoU_mid: 0.191144
+2025-06-19 18:44:37,166 - Model - INFO - **** Epoch 2 (2/40) ****
+2025-06-19 18:44:37,166 - Model - INFO - Learning rate:0.001000
+2025-06-19 19:11:31,819 - Model - INFO - Training mean loss: 0.669647
+2025-06-19 19:11:31,820 - Model - INFO - Training accuracy (IoU) of prediction: 0.390114
+2025-06-19 19:11:31,820 - Model - INFO - ---- EPOCH 002 EVALUATION ----
+2025-06-19 19:15:49,745 - Model - INFO - Eval mean loss: 0.693455
+2025-06-19 19:15:49,746 - Model - INFO - Eval avg class IoU of prediction: 0.173910
+2025-06-19 19:15:49,746 - Model - INFO - Best mIoU_mid: 0.191144
+2025-06-19 19:15:49,746 - Model - INFO - **** Epoch 3 (3/40) ****
+2025-06-19 19:15:49,746 - Model - INFO - Learning rate:0.001000
+2025-06-19 19:43:45,742 - Model - INFO - Training mean loss: 0.632196
+2025-06-19 19:43:45,743 - Model - INFO - Training accuracy (IoU) of prediction: 0.436695
+2025-06-19 19:43:45,743 - Model - INFO - ---- EPOCH 003 EVALUATION ----
+2025-06-19 19:48:07,243 - Model - INFO - Eval mean loss: 0.607753
+2025-06-19 19:48:07,244 - Model - INFO - Eval avg class IoU of prediction: 0.325436
+2025-06-19 19:48:07,244 - Model - INFO - Save model...
+2025-06-19 19:48:07,244 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth
+2025-06-19 19:48:07,274 - Model - INFO - Saving model....
+2025-06-19 19:48:07,274 - Model - INFO - Best mIoU_mid: 0.325436
+2025-06-19 19:48:07,274 - Model - INFO - **** Epoch 4 (4/40) ****
+2025-06-19 19:48:07,274 - Model - INFO - Learning rate:0.001000
+2025-06-19 20:15:17,027 - Model - INFO - Training mean loss: 0.620416
+2025-06-19 20:15:17,027 - Model - INFO - Training accuracy (IoU) of prediction: 0.452783
+2025-06-19 20:15:17,028 - Model - INFO - ---- EPOCH 004 EVALUATION ----
+2025-06-19 20:19:37,826 - Model - INFO - Eval mean loss: 0.553387
+2025-06-19 20:19:37,827 - Model - INFO - Eval avg class IoU of prediction: 0.246021
+2025-06-19 20:19:37,827 - Model - INFO - Best mIoU_mid: 0.325436
+2025-06-19 20:19:37,827 - Model - INFO - **** Epoch 5 (5/40) ****
+2025-06-19 20:19:37,827 - Model - INFO - Learning rate:0.001000
+2025-06-19 20:47:21,527 - Model - INFO - Training mean loss: 0.621142
+2025-06-19 20:47:21,528 - Model - INFO - Training accuracy (IoU) of prediction: 0.473887
+2025-06-19 20:47:21,528 - Model - INFO - Save model...
+2025-06-19 20:47:21,528 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_5_model.pth
+2025-06-19 20:47:21,557 - Model - INFO - Saving model....
+2025-06-19 20:47:21,557 - Model - INFO - ---- EPOCH 005 EVALUATION ----
+2025-06-19 20:51:41,843 - Model - INFO - Eval mean loss: 0.658575
+2025-06-19 20:51:41,844 - Model - INFO - Eval avg class IoU of prediction: 0.232813
+2025-06-19 20:51:41,844 - Model - INFO - Best mIoU_mid: 0.325436
+2025-06-19 20:51:41,844 - Model - INFO - **** Epoch 6 (6/40) ****
+2025-06-19 20:51:41,844 - Model - INFO - Learning rate:0.001000
+2025-06-19 21:20:06,298 - Model - INFO - Training mean loss: 0.605729
+2025-06-19 21:20:06,299 - Model - INFO - Training accuracy (IoU) of prediction: 0.468855
+2025-06-19 21:20:06,300 - Model - INFO - ---- EPOCH 006 EVALUATION ----
+2025-06-19 21:24:31,452 - Model - INFO - Eval mean loss: 0.569615
+2025-06-19 21:24:31,452 - Model - INFO - Eval avg class IoU of prediction: 0.264125
+2025-06-19 21:24:31,452 - Model - INFO - Best mIoU_mid: 0.325436
+2025-06-19 21:24:31,453 - Model - INFO - **** Epoch 7 (7/40) ****
+2025-06-19 21:24:31,453 - Model - INFO - Learning rate:0.001000
+2025-06-19 21:50:57,485 - Model - INFO - Training mean loss: 0.605640
+2025-06-19 21:50:57,486 - Model - INFO - Training accuracy (IoU) of prediction: 0.478485
+2025-06-19 21:50:57,486 - Model - INFO - ---- EPOCH 007 EVALUATION ----
+2025-06-19 21:55:18,065 - Model - INFO - Eval mean loss: 0.571518
+2025-06-19 21:55:18,065 - Model - INFO - Eval avg class IoU of prediction: 0.320682
+2025-06-19 21:55:18,065 - Model - INFO - Best mIoU_mid: 0.325436
+2025-06-19 21:55:18,065 - Model - INFO - **** Epoch 8 (8/40) ****
+2025-06-19 21:55:18,065 - Model - INFO - Learning rate:0.001000
+2025-06-19 22:22:06,895 - Model - INFO - Training mean loss: 0.602245
+2025-06-19 22:22:06,896 - Model - INFO - Training accuracy (IoU) of prediction: 0.478321
+2025-06-19 22:22:06,897 - Model - INFO - ---- EPOCH 008 EVALUATION ----
+2025-06-19 22:26:30,944 - Model - INFO - Eval mean loss: 0.597966
+2025-06-19 22:26:30,945 - Model - INFO - Eval avg class IoU of prediction: 0.324153
+2025-06-19 22:26:30,945 - Model - INFO - Best mIoU_mid: 0.325436
+2025-06-19 22:26:30,945 - Model - INFO - **** Epoch 9 (9/40) ****
+2025-06-19 22:26:30,945 - Model - INFO - Learning rate:0.001000
+2025-06-19 22:54:00,611 - Model - INFO - Training mean loss: 0.596163
+2025-06-19 22:54:00,612 - Model - INFO - Training accuracy (IoU) of prediction: 0.490050
+2025-06-19 22:54:00,613 - Model - INFO - ---- EPOCH 009 EVALUATION ----
+2025-06-19 22:58:16,801 - Model - INFO - Eval mean loss: 0.587600
+2025-06-19 22:58:16,802 - Model - INFO - Eval avg class IoU of prediction: 0.325779
+2025-06-19 22:58:16,802 - Model - INFO - Save model...
+2025-06-19 22:58:16,802 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth
+2025-06-19 22:58:16,834 - Model - INFO - Saving model....
+2025-06-19 22:58:16,835 - Model - INFO - Best mIoU_mid: 0.325779
+2025-06-19 22:58:16,835 - Model - INFO - **** Epoch 10 (10/40) ****
+2025-06-19 22:58:16,835 - Model - INFO - Learning rate:0.001000
+2025-06-19 23:25:51,095 - Model - INFO - Training mean loss: 0.601026
+2025-06-19 23:25:51,096 - Model - INFO - Training accuracy (IoU) of prediction: 0.481996
+2025-06-19 23:25:51,096 - Model - INFO - Save model...
+2025-06-19 23:25:51,096 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_10_model.pth
+2025-06-19 23:25:51,133 - Model - INFO - Saving model....
+2025-06-19 23:25:51,134 - Model - INFO - ---- EPOCH 010 EVALUATION ----
+2025-06-19 23:30:13,928 - Model - INFO - Eval mean loss: 0.542449
+2025-06-19 23:30:13,929 - Model - INFO - Eval avg class IoU of prediction: 0.370489
+2025-06-19 23:30:13,929 - Model - INFO - Save model...
+2025-06-19 23:30:13,929 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth
+2025-06-19 23:30:13,967 - Model - INFO - Saving model....
+2025-06-19 23:30:13,967 - Model - INFO - Best mIoU_mid: 0.370489
+2025-06-19 23:30:13,967 - Model - INFO - **** Epoch 11 (11/40) ****
+2025-06-19 23:30:13,967 - Model - INFO - Learning rate:0.000700
+2025-06-19 23:57:33,093 - Model - INFO - Training mean loss: 0.590971
+2025-06-19 23:57:33,094 - Model - INFO - Training accuracy (IoU) of prediction: 0.495320
+2025-06-19 23:57:33,095 - Model - INFO - ---- EPOCH 011 EVALUATION ----
+2025-06-20 00:02:09,584 - Model - INFO - Eval mean loss: 0.536139
+2025-06-20 00:02:09,584 - Model - INFO - Eval avg class IoU of prediction: 0.399075
+2025-06-20 00:02:09,584 - Model - INFO - Save model...
+2025-06-20 00:02:09,585 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth
+2025-06-20 00:02:09,618 - Model - INFO - Saving model....
+2025-06-20 00:02:09,618 - Model - INFO - Best mIoU_mid: 0.399075
+2025-06-20 00:02:09,618 - Model - INFO - **** Epoch 12 (12/40) ****
+2025-06-20 00:02:09,618 - Model - INFO - Learning rate:0.000700
+2025-06-20 00:29:35,552 - Model - INFO - Training mean loss: 0.586067
+2025-06-20 00:29:35,552 - Model - INFO - Training accuracy (IoU) of prediction: 0.496840
+2025-06-20 00:29:35,553 - Model - INFO - ---- EPOCH 012 EVALUATION ----
+2025-06-20 00:34:18,115 - Model - INFO - Eval mean loss: 0.599110
+2025-06-20 00:34:18,115 - Model - INFO - Eval avg class IoU of prediction: 0.317829
+2025-06-20 00:34:18,115 - Model - INFO - Best mIoU_mid: 0.399075
+2025-06-20 00:34:18,115 - Model - INFO - **** Epoch 13 (13/40) ****
+2025-06-20 00:34:18,115 - Model - INFO - Learning rate:0.000700
+2025-06-20 01:00:58,054 - Model - INFO - Training mean loss: 0.587866
+2025-06-20 01:00:58,055 - Model - INFO - Training accuracy (IoU) of prediction: 0.491581
+2025-06-20 01:00:58,056 - Model - INFO - ---- EPOCH 013 EVALUATION ----
+2025-06-20 01:05:37,428 - Model - INFO - Eval mean loss: 0.570301
+2025-06-20 01:05:37,428 - Model - INFO - Eval avg class IoU of prediction: 0.368665
+2025-06-20 01:05:37,428 - Model - INFO - Best mIoU_mid: 0.399075
+2025-06-20 01:05:37,428 - Model - INFO - **** Epoch 14 (14/40) ****
+2025-06-20 01:05:37,428 - Model - INFO - Learning rate:0.000700
+2025-06-20 01:31:21,658 - Model - INFO - Training mean loss: 0.588505
+2025-06-20 01:31:21,659 - Model - INFO - Training accuracy (IoU) of prediction: 0.495159
+2025-06-20 01:31:21,660 - Model - INFO - ---- EPOCH 014 EVALUATION ----
+2025-06-20 01:36:02,182 - Model - INFO - Eval mean loss: 0.544707
+2025-06-20 01:36:02,182 - Model - INFO - Eval avg class IoU of prediction: 0.377943
+2025-06-20 01:36:02,182 - Model - INFO - Best mIoU_mid: 0.399075
+2025-06-20 01:36:02,182 - Model - INFO - **** Epoch 15 (15/40) ****
+2025-06-20 01:36:02,182 - Model - INFO - Learning rate:0.000700
+2025-06-20 02:03:31,028 - Model - INFO - Training mean loss: 0.578608
+2025-06-20 02:03:31,029 - Model - INFO - Training accuracy (IoU) of prediction: 0.508347
+2025-06-20 02:03:31,029 - Model - INFO - Save model...
+2025-06-20 02:03:31,029 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_15_model.pth
+2025-06-20 02:03:31,064 - Model - INFO - Saving model....
+2025-06-20 02:03:31,065 - Model - INFO - ---- EPOCH 015 EVALUATION ----
+2025-06-20 02:08:11,282 - Model - INFO - Eval mean loss: 0.564830
+2025-06-20 02:08:11,283 - Model - INFO - Eval avg class IoU of prediction: 0.335553
+2025-06-20 02:08:11,283 - Model - INFO - Best mIoU_mid: 0.399075
+2025-06-20 02:08:11,283 - Model - INFO - **** Epoch 16 (16/40) ****
+2025-06-20 02:08:11,283 - Model - INFO - Learning rate:0.000700
+2025-06-20 02:36:07,455 - Model - INFO - Training mean loss: 0.590063
+2025-06-20 02:36:07,456 - Model - INFO - Training accuracy (IoU) of prediction: 0.503151
+2025-06-20 02:36:07,457 - Model - INFO - ---- EPOCH 016 EVALUATION ----
+2025-06-20 02:40:43,177 - Model - INFO - Eval mean loss: 0.560153
+2025-06-20 02:40:43,177 - Model - INFO - Eval avg class IoU of prediction: 0.356387
+2025-06-20 02:40:43,177 - Model - INFO - Best mIoU_mid: 0.399075
+2025-06-20 02:40:43,177 - Model - INFO - **** Epoch 17 (17/40) ****
+2025-06-20 02:40:43,177 - Model - INFO - Learning rate:0.000700
+2025-06-20 03:08:17,172 - Model - INFO - Training mean loss: 0.581167
+2025-06-20 03:08:17,173 - Model - INFO - Training accuracy (IoU) of prediction: 0.504027
+2025-06-20 03:08:17,174 - Model - INFO - ---- EPOCH 017 EVALUATION ----
+2025-06-20 03:13:00,113 - Model - INFO - Eval mean loss: 0.585092
+2025-06-20 03:13:00,113 - Model - INFO - Eval avg class IoU of prediction: 0.302056
+2025-06-20 03:13:00,113 - Model - INFO - Best mIoU_mid: 0.399075
+2025-06-20 03:13:00,113 - Model - INFO - **** Epoch 18 (18/40) ****
+2025-06-20 03:13:00,113 - Model - INFO - Learning rate:0.000700
+2025-06-20 03:40:04,637 - Model - INFO - Training mean loss: 0.582550
+2025-06-20 03:40:04,638 - Model - INFO - Training accuracy (IoU) of prediction: 0.507710
+2025-06-20 03:40:04,639 - Model - INFO - ---- EPOCH 018 EVALUATION ----
+2025-06-20 03:44:45,801 - Model - INFO - Eval mean loss: 0.513697
+2025-06-20 03:44:45,801 - Model - INFO - Eval avg class IoU of prediction: 0.432952
+2025-06-20 03:44:45,801 - Model - INFO - Save model...
+2025-06-20 03:44:45,802 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth
+2025-06-20 03:44:45,829 - Model - INFO - Saving model....
+2025-06-20 03:44:45,829 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 03:44:45,829 - Model - INFO - **** Epoch 19 (19/40) ****
+2025-06-20 03:44:45,829 - Model - INFO - Learning rate:0.000700
+2025-06-20 04:12:07,015 - Model - INFO - Training mean loss: 0.583057
+2025-06-20 04:12:07,016 - Model - INFO - Training accuracy (IoU) of prediction: 0.510140
+2025-06-20 04:12:07,017 - Model - INFO - ---- EPOCH 019 EVALUATION ----
+2025-06-20 04:16:28,637 - Model - INFO - Eval mean loss: 0.551155
+2025-06-20 04:16:28,638 - Model - INFO - Eval avg class IoU of prediction: 0.370082
+2025-06-20 04:16:28,638 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 04:16:28,638 - Model - INFO - **** Epoch 20 (20/40) ****
+2025-06-20 04:16:28,638 - Model - INFO - Learning rate:0.000700
+2025-06-20 04:44:57,458 - Model - INFO - Training mean loss: 0.577351
+2025-06-20 04:44:57,459 - Model - INFO - Training accuracy (IoU) of prediction: 0.501662
+2025-06-20 04:44:57,459 - Model - INFO - Save model...
+2025-06-20 04:44:57,459 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_20_model.pth
+2025-06-20 04:44:57,497 - Model - INFO - Saving model....
+2025-06-20 04:44:57,498 - Model - INFO - ---- EPOCH 020 EVALUATION ----
+2025-06-20 04:49:21,238 - Model - INFO - Eval mean loss: 0.608201
+2025-06-20 04:49:21,238 - Model - INFO - Eval avg class IoU of prediction: 0.334785
+2025-06-20 04:49:21,238 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 04:49:21,238 - Model - INFO - **** Epoch 21 (21/40) ****
+2025-06-20 04:49:21,238 - Model - INFO - Learning rate:0.000490
+2025-06-20 05:15:53,786 - Model - INFO - Training mean loss: 0.572846
+2025-06-20 05:15:53,787 - Model - INFO - Training accuracy (IoU) of prediction: 0.506091
+2025-06-20 05:15:53,787 - Model - INFO - ---- EPOCH 021 EVALUATION ----
+2025-06-20 05:20:15,253 - Model - INFO - Eval mean loss: 0.550116
+2025-06-20 05:20:15,253 - Model - INFO - Eval avg class IoU of prediction: 0.417232
+2025-06-20 05:20:15,253 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 05:20:15,253 - Model - INFO - **** Epoch 22 (22/40) ****
+2025-06-20 05:20:15,253 - Model - INFO - Learning rate:0.000490
+2025-06-20 05:47:01,514 - Model - INFO - Training mean loss: 0.575521
+2025-06-20 05:47:01,515 - Model - INFO - Training accuracy (IoU) of prediction: 0.510145
+2025-06-20 05:47:01,516 - Model - INFO - ---- EPOCH 022 EVALUATION ----
+2025-06-20 05:51:29,619 - Model - INFO - Eval mean loss: 0.542947
+2025-06-20 05:51:29,620 - Model - INFO - Eval avg class IoU of prediction: 0.341198
+2025-06-20 05:51:29,620 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 05:51:29,620 - Model - INFO - **** Epoch 23 (23/40) ****
+2025-06-20 05:51:29,620 - Model - INFO - Learning rate:0.000490
+2025-06-20 06:18:40,388 - Model - INFO - Training mean loss: 0.582849
+2025-06-20 06:18:40,389 - Model - INFO - Training accuracy (IoU) of prediction: 0.507312
+2025-06-20 06:18:40,390 - Model - INFO - ---- EPOCH 023 EVALUATION ----
+2025-06-20 06:23:04,886 - Model - INFO - Eval mean loss: 0.537367
+2025-06-20 06:23:04,887 - Model - INFO - Eval avg class IoU of prediction: 0.370141
+2025-06-20 06:23:04,887 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 06:23:04,887 - Model - INFO - **** Epoch 24 (24/40) ****
+2025-06-20 06:23:04,887 - Model - INFO - Learning rate:0.000490
+2025-06-20 06:51:46,104 - Model - INFO - Training mean loss: 0.566264
+2025-06-20 06:51:46,104 - Model - INFO - Training accuracy (IoU) of prediction: 0.517228
+2025-06-20 06:51:46,105 - Model - INFO - ---- EPOCH 024 EVALUATION ----
+2025-06-20 06:56:08,669 - Model - INFO - Eval mean loss: 0.546609
+2025-06-20 06:56:08,669 - Model - INFO - Eval avg class IoU of prediction: 0.336816
+2025-06-20 06:56:08,669 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 06:56:08,669 - Model - INFO - **** Epoch 25 (25/40) ****
+2025-06-20 06:56:08,669 - Model - INFO - Learning rate:0.000490
+2025-06-20 07:24:44,151 - Model - INFO - Training mean loss: 0.574267
+2025-06-20 07:24:44,152 - Model - INFO - Training accuracy (IoU) of prediction: 0.520741
+2025-06-20 07:24:44,152 - Model - INFO - Save model...
+2025-06-20 07:24:44,152 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_25_model.pth
+2025-06-20 07:24:44,190 - Model - INFO - Saving model....
+2025-06-20 07:24:44,191 - Model - INFO - ---- EPOCH 025 EVALUATION ----
+2025-06-20 07:29:02,590 - Model - INFO - Eval mean loss: 0.534696
+2025-06-20 07:29:02,591 - Model - INFO - Eval avg class IoU of prediction: 0.325883
+2025-06-20 07:29:02,591 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 07:29:02,591 - Model - INFO - **** Epoch 26 (26/40) ****
+2025-06-20 07:29:02,591 - Model - INFO - Learning rate:0.000490
+2025-06-20 07:56:12,083 - Model - INFO - Training mean loss: 0.579109
+2025-06-20 07:56:12,084 - Model - INFO - Training accuracy (IoU) of prediction: 0.510546
+2025-06-20 07:56:12,085 - Model - INFO - ---- EPOCH 026 EVALUATION ----
+2025-06-20 08:00:30,797 - Model - INFO - Eval mean loss: 0.523813
+2025-06-20 08:00:30,797 - Model - INFO - Eval avg class IoU of prediction: 0.314503
+2025-06-20 08:00:30,798 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 08:00:30,798 - Model - INFO - **** Epoch 27 (27/40) ****
+2025-06-20 08:00:30,798 - Model - INFO - Learning rate:0.000490
+2025-06-20 08:27:50,795 - Model - INFO - Training mean loss: 0.572116
+2025-06-20 08:27:50,796 - Model - INFO - Training accuracy (IoU) of prediction: 0.516427
+2025-06-20 08:27:50,797 - Model - INFO - ---- EPOCH 027 EVALUATION ----
+2025-06-20 08:32:19,310 - Model - INFO - Eval mean loss: 0.566086
+2025-06-20 08:32:19,310 - Model - INFO - Eval avg class IoU of prediction: 0.356824
+2025-06-20 08:32:19,310 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 08:32:19,310 - Model - INFO - **** Epoch 28 (28/40) ****
+2025-06-20 08:32:19,310 - Model - INFO - Learning rate:0.000490
+2025-06-20 08:59:27,015 - Model - INFO - Training mean loss: 0.573584
+2025-06-20 08:59:27,015 - Model - INFO - Training accuracy (IoU) of prediction: 0.513008
+2025-06-20 08:59:27,016 - Model - INFO - ---- EPOCH 028 EVALUATION ----
+2025-06-20 09:04:05,255 - Model - INFO - Eval mean loss: 0.589709
+2025-06-20 09:04:05,256 - Model - INFO - Eval avg class IoU of prediction: 0.268372
+2025-06-20 09:04:05,256 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 09:04:05,256 - Model - INFO - **** Epoch 29 (29/40) ****
+2025-06-20 09:04:05,256 - Model - INFO - Learning rate:0.000490
+2025-06-20 09:32:37,879 - Model - INFO - Training mean loss: 0.571821
+2025-06-20 09:32:37,880 - Model - INFO - Training accuracy (IoU) of prediction: 0.511704
+2025-06-20 09:32:37,881 - Model - INFO - ---- EPOCH 029 EVALUATION ----
+2025-06-20 09:37:03,601 - Model - INFO - Eval mean loss: 0.533093
+2025-06-20 09:37:03,601 - Model - INFO - Eval avg class IoU of prediction: 0.330511
+2025-06-20 09:37:03,601 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 09:37:03,601 - Model - INFO - **** Epoch 30 (30/40) ****
+2025-06-20 09:37:03,602 - Model - INFO - Learning rate:0.000490
+2025-06-20 10:04:09,623 - Model - INFO - Training mean loss: 0.568595
+2025-06-20 10:04:09,624 - Model - INFO - Training accuracy (IoU) of prediction: 0.525912
+2025-06-20 10:04:09,624 - Model - INFO - Save model...
+2025-06-20 10:04:09,624 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_30_model.pth
+2025-06-20 10:04:09,663 - Model - INFO - Saving model....
+2025-06-20 10:04:09,663 - Model - INFO - ---- EPOCH 030 EVALUATION ----
+2025-06-20 10:08:36,446 - Model - INFO - Eval mean loss: 0.567739
+2025-06-20 10:08:36,447 - Model - INFO - Eval avg class IoU of prediction: 0.276506
+2025-06-20 10:08:36,447 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 10:08:36,447 - Model - INFO - **** Epoch 31 (31/40) ****
+2025-06-20 10:08:36,447 - Model - INFO - Learning rate:0.000343
+2025-06-20 10:36:15,311 - Model - INFO - Training mean loss: 0.564988
+2025-06-20 10:36:15,312 - Model - INFO - Training accuracy (IoU) of prediction: 0.528709
+2025-06-20 10:36:15,313 - Model - INFO - ---- EPOCH 031 EVALUATION ----
+2025-06-20 10:40:59,487 - Model - INFO - Eval mean loss: 0.536127
+2025-06-20 10:40:59,488 - Model - INFO - Eval avg class IoU of prediction: 0.357726
+2025-06-20 10:40:59,488 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 10:40:59,488 - Model - INFO - **** Epoch 32 (32/40) ****
+2025-06-20 10:40:59,488 - Model - INFO - Learning rate:0.000343
+2025-06-20 11:08:35,599 - Model - INFO - Training mean loss: 0.559698
+2025-06-20 11:08:35,601 - Model - INFO - Training accuracy (IoU) of prediction: 0.523983
+2025-06-20 11:08:35,602 - Model - INFO - ---- EPOCH 032 EVALUATION ----
+2025-06-20 11:13:21,921 - Model - INFO - Eval mean loss: 0.502315
+2025-06-20 11:13:21,921 - Model - INFO - Eval avg class IoU of prediction: 0.401214
+2025-06-20 11:13:21,921 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 11:13:21,921 - Model - INFO - **** Epoch 33 (33/40) ****
+2025-06-20 11:13:21,922 - Model - INFO - Learning rate:0.000343
+2025-06-20 11:40:15,748 - Model - INFO - Training mean loss: 0.567915
+2025-06-20 11:40:15,748 - Model - INFO - Training accuracy (IoU) of prediction: 0.520350
+2025-06-20 11:40:15,749 - Model - INFO - ---- EPOCH 033 EVALUATION ----
+2025-06-20 11:44:47,767 - Model - INFO - Eval mean loss: 0.565173
+2025-06-20 11:44:47,767 - Model - INFO - Eval avg class IoU of prediction: 0.345561
+2025-06-20 11:44:47,767 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 11:44:47,768 - Model - INFO - **** Epoch 34 (34/40) ****
+2025-06-20 11:44:47,768 - Model - INFO - Learning rate:0.000343
+2025-06-20 12:11:55,287 - Model - INFO - Training mean loss: 0.557827
+2025-06-20 12:11:55,288 - Model - INFO - Training accuracy (IoU) of prediction: 0.533817
+2025-06-20 12:11:55,289 - Model - INFO - ---- EPOCH 034 EVALUATION ----
+2025-06-20 12:16:30,814 - Model - INFO - Eval mean loss: 0.546903
+2025-06-20 12:16:30,815 - Model - INFO - Eval avg class IoU of prediction: 0.385233
+2025-06-20 12:16:30,815 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 12:16:30,815 - Model - INFO - **** Epoch 35 (35/40) ****
+2025-06-20 12:16:30,815 - Model - INFO - Learning rate:0.000343
+2025-06-20 12:43:32,769 - Model - INFO - Training mean loss: 0.569068
+2025-06-20 12:43:32,770 - Model - INFO - Training accuracy (IoU) of prediction: 0.522973
+2025-06-20 12:43:32,770 - Model - INFO - Save model...
+2025-06-20 12:43:32,770 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_35_model.pth
+2025-06-20 12:43:32,811 - Model - INFO - Saving model....
+2025-06-20 12:43:32,811 - Model - INFO - ---- EPOCH 035 EVALUATION ----
+2025-06-20 12:48:03,776 - Model - INFO - Eval mean loss: 0.553632
+2025-06-20 12:48:03,777 - Model - INFO - Eval avg class IoU of prediction: 0.373158
+2025-06-20 12:48:03,777 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 12:48:03,777 - Model - INFO - **** Epoch 36 (36/40) ****
+2025-06-20 12:48:03,777 - Model - INFO - Learning rate:0.000343
+2025-06-20 13:15:07,394 - Model - INFO - Training mean loss: 0.555472
+2025-06-20 13:15:07,395 - Model - INFO - Training accuracy (IoU) of prediction: 0.539645
+2025-06-20 13:15:07,396 - Model - INFO - ---- EPOCH 036 EVALUATION ----
+2025-06-20 13:19:26,228 - Model - INFO - Eval mean loss: 0.581228
+2025-06-20 13:19:26,228 - Model - INFO - Eval avg class IoU of prediction: 0.392853
+2025-06-20 13:19:26,228 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 13:19:26,228 - Model - INFO - **** Epoch 37 (37/40) ****
+2025-06-20 13:19:26,228 - Model - INFO - Learning rate:0.000343
+2025-06-20 13:46:34,918 - Model - INFO - Training mean loss: 0.562333
+2025-06-20 13:46:34,919 - Model - INFO - Training accuracy (IoU) of prediction: 0.534898
+2025-06-20 13:46:34,920 - Model - INFO - ---- EPOCH 037 EVALUATION ----
+2025-06-20 13:51:13,533 - Model - INFO - Eval mean loss: 0.512575
+2025-06-20 13:51:13,533 - Model - INFO - Eval avg class IoU of prediction: 0.411288
+2025-06-20 13:51:13,533 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 13:51:13,533 - Model - INFO - **** Epoch 38 (38/40) ****
+2025-06-20 13:51:13,533 - Model - INFO - Learning rate:0.000343
+2025-06-20 14:17:37,473 - Model - INFO - Training mean loss: 0.559825
+2025-06-20 14:17:37,474 - Model - INFO - Training accuracy (IoU) of prediction: 0.531986
+2025-06-20 14:17:37,475 - Model - INFO - ---- EPOCH 038 EVALUATION ----
+2025-06-20 14:22:20,234 - Model - INFO - Eval mean loss: 0.522111
+2025-06-20 14:22:20,234 - Model - INFO - Eval avg class IoU of prediction: 0.267055
+2025-06-20 14:22:20,234 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 14:22:20,234 - Model - INFO - **** Epoch 39 (39/40) ****
+2025-06-20 14:22:20,234 - Model - INFO - Learning rate:0.000343
+2025-06-20 14:49:20,110 - Model - INFO - Training mean loss: 0.565317
+2025-06-20 14:49:20,111 - Model - INFO - Training accuracy (IoU) of prediction: 0.520232
+2025-06-20 14:49:20,112 - Model - INFO - ---- EPOCH 039 EVALUATION ----
+2025-06-20 14:54:06,136 - Model - INFO - Eval mean loss: 0.534550
+2025-06-20 14:54:06,137 - Model - INFO - Eval avg class IoU of prediction: 0.314855
+2025-06-20 14:54:06,137 - Model - INFO - Best mIoU_mid: 0.432952
+2025-06-20 14:54:06,137 - Model - INFO - **** Epoch 40 (40/40) ****
+2025-06-20 14:54:06,137 - Model - INFO - Learning rate:0.000343
+2025-06-20 15:22:05,883 - Model - INFO - Training mean loss: 0.562246
+2025-06-20 15:22:05,884 - Model - INFO - Training accuracy (IoU) of prediction: 0.534422
+2025-06-20 15:22:05,884 - Model - INFO - Save model...
+2025-06-20 15:22:05,884 - Model - INFO - Saving at log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/epoch_40_model.pth
+2025-06-20 15:22:05,923 - Model - INFO - Saving model....
+2025-06-20 15:22:05,923 - Model - INFO - ---- EPOCH 040 EVALUATION ----
+2025-06-20 15:26:40,740 - Model - INFO - Eval mean loss: 0.537728
+2025-06-20 15:26:40,740 - Model - INFO - Eval avg class IoU of prediction: 0.390453
+2025-06-20 15:26:40,740 - Model - INFO - Best mIoU_mid: 0.432952
