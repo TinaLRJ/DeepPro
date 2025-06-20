@@ -35,10 +35,9 @@ def parse_args():
     parser.add_argument('--epoch', type=int, default=None, help='Epoch of generator to test [default: None]')
     parser.add_argument('--gpu', type=str, default='0', help='specify gpu device')
     parser.add_argument('--seqlen', type=int, default=40, help='Frame number as an input [default: 100]')
-    parser.add_argument('--num_point', type=int, default=100000, help='Point Number [default: 4096]')
-    parser.add_argument('--datapath', type=str, default='/data/lrj/data/NUDT-MIRSDT-Noise/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)', help='Data path [default: /data/lrj/data/NUDT-MIRSDT-Noise, /data/lrj/data/IRDST-simulation/]')  ## /gpfs3/LRJ/飞行数据/  IR__2024-03-18_15-00__SoftLoUloss_DiffConv1+DGConv234_AttV1_head1_NewTrainDL, IR__2024-03-17_11-03__SoftLoUloss_DiffConv1+DGConv234_AttV1_head2_NewTrainDL, IR__2024-03-17_11-04__SoftLoUloss_DiffConv1+DGConv234_AttV1_head4_NewTrainDL
-    parser.add_argument('--dataset', type=str, default='NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)', help='dataset name [default: NUDT-MIRSDT, IRDST-simulation, RGB-T]')
-    parser.add_argument('--log_dir', type=str, default='RGB-T__2025-01-14_15-27__SoftLoUloss_DeepPro-Plus_DataL40', help='experiment root')   ## required=True  IR__2024-11-27_10-23__SoftLoUloss_GConv1+DGConv23_AttV1_NewTrainDL40
+    parser.add_argument('--datapath', type=str, default='./datasets/NUDT-MIRSDT', help='Data path')
+    parser.add_argument('--dataset', type=str, default='NUDT-MIRSDT', help='dataset name [default: NUDT-MIRSDT, IRDST-simulation, RGB-T, SatVideoIRSDT]')
+    parser.add_argument('--log_dir', type=str, default='NUDT-MIRSDT__2024-12-28_16-21__SoftLoUloss_DeepPro-Plus_DataL40', help='experiment root')
     parser.add_argument('--logpath', type=str, default='./log/', help='Log path: ./log/')
     parser.add_argument('--visual', action='store_true', default=False, help='visualize result [default: False]')
     parser.add_argument('--threshold_eval', type=float, default=0.5, help='Threshold in evaluation [default: 0.5]')
