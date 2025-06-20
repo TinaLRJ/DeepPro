@@ -27,7 +27,7 @@ Other datasets include NUDT-MIRSDT-Noise dataset, IRSDT dataset and [RGBT-Tiny](
 
 ## SatVideoIRSDT Dataset for SatVideoIRSTD Challenge &nbsp;[**[Homepage]**](https://videoirstd.github.io/)
 
-Training set &nbsp; [[download dir]](https://pan.baidu.com/s/1qZn33wG7xDCjpFImPBTY5Q?pwd=8tvk) is including 1000 sequences. Validation set &nbsp; [[download dir]](https://pan.baidu.com/s/1ab3vUmIrwF9VAZSgc2EF3g?pwd=eqf2) is including 200 sequences.
+Training set &nbsp; [[download dir]](https://pan.baidu.com/s/1qZn33wG7xDCjpFImPBTY5Q?pwd=8tvk) includes 1000 sequences. Validation set &nbsp; [[download dir]](https://pan.baidu.com/s/1ab3vUmIrwF9VAZSgc2EF3g?pwd=eqf2) includes 200 sequences.
 
 
 
