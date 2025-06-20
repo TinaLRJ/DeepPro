@@ -25,6 +25,12 @@ In the test set, targets in 8 sequences are so weak (SNR lower than 3). It is ve
 
 Other datasets include NUDT-MIRSDT-Noise dataset, IRSDT dataset and [RGBT-Tiny](https://github.com/XinyiYing/RGBT-Tiny) dataset.
 
+## SatVideoIRSDT Dataset for SatVideoIRSTD Challenge &nbsp;[**[Homepage]**](https://videoirstd.github.io/)
+
+Training set &nbsp; [[download dir]](https://pan.baidu.com/s/1qZn33wG7xDCjpFImPBTY5Q?pwd=8tvk) is including 1000 sequences. Validation set &nbsp; [[download dir]](https://pan.baidu.com/s/1ab3vUmIrwF9VAZSgc2EF3g?pwd=eqf2) is including 200 sequences.
+
+
+
 ## Train
 ```bash
 python train.py --model 'DeepPro' --seqlen 40 --dataset [dataset name] --datapath [dataset path]
