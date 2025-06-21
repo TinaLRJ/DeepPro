@@ -59,7 +59,6 @@ def parse_args():
     parser.add_argument('--sample_rate', type=int, default=0.1, help='Sampling rate for training [default: 0.1(NUDT-MIRSDT), '
                                                                      '0.03(IRDST), 0.05(RGB-T), 0.04(SatVideoIRSDT)]')
     parser.add_argument('--lr_decay', type=float, default=0.7, help='Decay rate for lr decay [default: 0.7]')
-    parser.add_argument('--threshold', type=float, default=0.01, help='Threshold of segmentation [default: 0.01]')
     parser.add_argument('--threshold_eval', type=float, default=0.3, help='Threshold in evaluation [default: 0.5]')
 
     return parser.parse_args()
