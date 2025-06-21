@@ -63,7 +63,7 @@ def process_sequence(seq_folder, output_txt, thresh):
 # 主处理流程保持不变
 if __name__ == '__main__':
     root_dir = r"./log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/visual"
-    output_base_dir = r"./log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/output_centroid"
+    output_base_dir = r"./log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/out_centroid"
     os.makedirs(output_base_dir, exist_ok=True)
     thresh = 100
 
