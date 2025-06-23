@@ -97,14 +97,11 @@ on NUDT-MIRSDT-Noise
 
 ## Citiation
 ```
-@misc{li2025probingdeeptemporalprofile,
-      title={Probing Deep into Temporal Profile Makes the Infrared Small Target Detector Much Better}, 
-      author={Ruojing Li and Wei An and Xinyi Ying and Yingqian Wang and Yimian Dai and Longguang Wang and Miao Li and Yulan Guo and Li Liu},
-      year={2025},
-      eprint={2506.12766},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2506.12766}, 
+@article{li2025probing,
+  title={Probing Deep into Temporal Profile Makes the Infrared Small Target Detector Much Better},
+  author={Li, Ruojing and An, Wei and Ying, Xinyi and Wang, Yingqian and Dai, Yimian and Wang, Longguang and Li, Miao and Guo, Yulan and Liu, Li},
+  journal={arXiv preprint arXiv:2506.12766},
+  year={2025}
 }
 ```
 <br>
