@@ -227,8 +227,8 @@ def main(args):
             log_string('---- EPOCH %03d EVALUATION ----' % (global_epoch + 1))
             # for i, (images, targets) in tqdm(enumerate(testDataLoader), total=len(testDataLoader), smoothing=0.9):
             for seq_idx, seq_dataset in tqdm(enumerate(TEST_DATASET), total=len(TEST_DATASET), smoothing=0.9):
-                if seq_idx % 3 > 0:
-                    continue
+                # if seq_idx % 3 > 0:
+                #     continue
                 seq_dataloader = torch.utils.data.DataLoader(seq_dataset, batch_size=1, shuffle=False)
                 num_batches += len(seq_dataloader)
                 for i, (images, targets, _, first_end) in enumerate(seq_dataloader):
