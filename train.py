@@ -6,6 +6,7 @@ import argparse
 import os
 from data_utils.TrainDataLoader import TrainIRSeqDataLoader
 from data_utils.TestDataLoader import TestIRSeqDataLoader
+from torch.utils.data import RandomSampler
 import torch
 import datetime
 import logging
@@ -110,13 +111,13 @@ def main(args):
     BATCH_SIZE = args.batch_size
 
     print("start loading training data ...")
-    TRAIN_DATASET = TrainIRSeqDataLoader(args.dataset, data_root=root, seq_len=SEQ_LEN, sample_rate=args.sample_rate,
-                                         patch_size=args.patch_size, transform=None)  # sample_rate=0.1, 0.03, 0.05
+    TRAIN_DATASET = TrainIRSeqDataLoader(args.dataset, data_root=root, seq_len=SEQ_LEN, patch_size=args.patch_size, transform=None)
+    sampler = RandomSampler(TRAIN_DATASET, num_samples=int(len(TRAIN_DATASET)*args.sample_rate))  # sample_rate=0.1, 0.03, 0.05
     print("start loading test data ...")
     TEST_DATASET  = TestIRSeqDataLoader(args.dataset, data_root=root,  seq_len=SEQ_LEN, cat_len=int(SEQ_LEN*0.1), transform=None)
 
     trainDataLoader = torch.utils.data.DataLoader(TRAIN_DATASET, batch_size=BATCH_SIZE, shuffle=True, num_workers=4,
-                                                  pin_memory=True, drop_last=True,
+                                                  pin_memory=True, drop_last=True, sampler=sampler,
                                                   worker_init_fn=lambda x: np.random.seed(x + int(time.time())))
 
     log_string("The number of training data is: %d" % len(TRAIN_DATASET))
