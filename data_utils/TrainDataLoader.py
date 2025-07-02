@@ -9,11 +9,12 @@ from torch.utils.data import Dataset
 
 
 class TrainSeqDataLoader(Dataset):
-    def __init__(self, dataset, data_root, samplelist, sample_p, seq_len=100, patch_size=None, transform=None):
+    def __init__(self, dataset, data_root, samplelist, sample_p, seq_len=100, sample_rate=0.1, patch_size=None, transform=None):
         self.data_root = data_root
         self.samplelist = samplelist
         self.sample_p = sample_p
         self.seq_len = seq_len
+        self.sample_rate = sample_rate
         self.patch_size = patch_size
         self.transform = transform
         self.dataset = dataset
@@ -31,7 +32,7 @@ class TrainSeqDataLoader(Dataset):
             self.train_std = 22.43
 
     def __len__(self):
-        return len(self.samplelist)
+        return int(len(self.samplelist) * self.sample_rate)
 
     def get_image_label(self, image_path, label_path):
         image = Image.open(image_path)
@@ -114,7 +115,7 @@ class TrainSeqDataLoader(Dataset):
 
 
 class TrainIRSeqDataLoader(TrainSeqDataLoader):
-    def __init__(self, dataset='NUDT-MIRSDT', data_root='./datasets/IRSeq', seq_len=100, patch_size=None, transform=None):
+    def __init__(self, dataset='NUDT-MIRSDT', data_root='./datasets/IRSeq', seq_len=100, sample_rate=0.1, patch_size=None, transform=None):
         if 'NUDT-MIRSDT' in dataset or dataset == 'RGB-T' or dataset == 'SatVideoIRSDT':
             self.seq_list_file = os.path.join(data_root, 'train.txt')
         elif dataset == 'IRDST-simulation':
@@ -156,7 +157,7 @@ class TrainIRSeqDataLoader(TrainSeqDataLoader):
                 sample_p.append(len(sample))
 
         sample_p = [p/sum(sample_p) for p in sample_p]
-        super(TrainIRSeqDataLoader, self).__init__(dataset, data_root, samplelist, sample_p, seq_len, patch_size, transform)
+        super(TrainIRSeqDataLoader, self).__init__(dataset, data_root, samplelist, sample_p, seq_len, sample_rate, patch_size, transform)
 
     def _check_preprocess(self):
         if not os.path.isfile(self.seq_list_file):
