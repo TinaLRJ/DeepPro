@@ -17,7 +17,7 @@ Our work is currently under peer review. The contributions of this work are as f
 
 ## Datasets
 
-NUDT-MIRSDT &nbsp; [[download dir]](https://mail.nudt.edu.cn/coremail/common/nfFile.jsp?share_link=5418DA3CCDBA48F8A81AE154DA02C3D5&uid=liruojing%40nudt.edu.cn) (Extraction code: M6PZ)
+NUDT-MIRSDT &nbsp; [[Baidu download dir]](https://pan.baidu.com/s/1pSN350eurMafLiHBQBnrPA?pwd=5whn) (Extraction code: 5whn)
 is a synthesized dataset, which contains 120 sequences. We use 80 sequences for training and 20 sequences for test.
 We divide the test set into two subsets according to their SNR ((0, 3], (3, 10)).
 
