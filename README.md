@@ -95,6 +95,16 @@ on NUDT-MIRSDT-Noise
 | DeepPro-Plus | 76.23 | 1.69 | 0.9171 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)__2024-12-27_23-28__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
 
+on SatVideoIRSDT
+
+| Model         | Pd (x10(-2))|  Fa (x10(-5)) | AUC ||
+| ------------- |:-------------:|:-----:|:-----:|:-----:|
+| Res-UNet+DTUM | - | - | - | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)__2024-12-27_23-28__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
+| STDMANet | - | - | - |
+| Res-U+RFR | - | - | - |
+| DeepPro-Plus | - | - | - | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)__2024-12-27_23-28__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
+
+
 ## Citiation
 ```
 @article{li2025probing,
