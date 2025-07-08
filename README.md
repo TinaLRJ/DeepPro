@@ -99,10 +99,10 @@ on SatVideoIRSDT
 
 | Model         | Pd (x10(-2))|  Fa (x10(-5)) | AUC ||
 | ------------- |:-------------:|:-----:|:-----:|:-----:|
-| Res-UNet+DTUM | - | - | - | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)__2024-12-27_23-28__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
+| Res-UNet+DTUM | - | - | - | [[Weights]](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM/blob/main/results/SatVideoIRSTD_ResUNet_DTUM_SpatialDeepSupFalse_fullySup/ResUNet_DTUM.pth) |
 | STDMANet | - | - | - |
 | Res-U+RFR | - | - | - |
-| DeepPro-Plus | - | - | - | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)__2024-12-27_23-28__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
+| DeepPro-Plus | - | - | - | [[Weights]](https://github.com/TinaLRJ/DeepPro/blob/main/log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
 
 ## Citiation
