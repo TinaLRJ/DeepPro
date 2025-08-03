@@ -42,7 +42,7 @@ python train.py --model 'DeepPro-Plus' --seqlen 40 --dataset [dataset name] --da
 ## Test
 ```bash
 python test.py --seqlen 40 --datapath [dataset path] --dataset [dataset name] --logpath [log path] --log_dir [trained model path]
-python test.py --seqlen 40 --datapath './datasets/SatVideoIRSDT' --dataset 'SatVideoIRSDT' --logpath './log/' --log_dir 'SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40'  # test for SatVideoIRSTD challenge
+python test.py --seqlen 40 --datapath './datasets/SatVideoIRSDT' --dataset 'SatVideoIRSDT' --logpath './log/' --log_dir 'SatVideoIRSDT__2025-07-22_19-41__SoftLoUloss_DeepPro-Plus_DataL40'  # test for SatVideoIRSTD challenge
 ```
 <br>
 
@@ -102,7 +102,7 @@ on SatVideoIRSDT
 | Res-UNet+DTUM | - | - | - | [[Weights]](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM/blob/main/results/SatVideoIRSTD_ResUNet_DTUM_SpatialDeepSupFalse_fullySup/ResUNet_DTUM.pth) |
 | STDMANet | - | - | - |
 | Res-U+RFR | - | - | - |
-| DeepPro-Plus | - | - | - | [[Weights]](https://github.com/TinaLRJ/DeepPro/blob/main/log/sem_seg/SatVideoIRSDT__2025-06-19_18-10__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
+| DeepPro-Plus | - | - | - | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/SatVideoIRSDT__2025-07-22_19-41__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
 
 ## Citiation
