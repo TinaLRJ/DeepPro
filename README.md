@@ -96,7 +96,7 @@ on NUDT-MIRSDT-Noise
 
 on SatVideoIRSDT
 
-| Model         | Recall | Precision | F1 ||
+| Model         | Recall | Precision | F1 score ||
 | ------------- |:------:|:-----:|:-----:|:-----:|
 | Res-UNet+DTUM | 36.41 | 58.94 | 45.40 | [[Weights]](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM/blob/main/results/SatVideoIRSTD_ResUNet_DTUM_SpatialDeepSupFalse_fullySup/ResUNet_DTUM.pth) |
 | Res-UNet+RFR | 55.46 | 0.05 | 0.10 |
