@@ -67,7 +67,6 @@ on NUDT-MIRSDT (SNR≤3)
 | ------------- |:-----------:|:-------------:|:---:|:------:|
 | Res-UNet+DTUM | 91.68 | 2.37 | 0.9921 | [[Weights]](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM/blob/main/results/ResUNet_DTUM_SpatialDeepSupFalse_fullySup/ResUNet_DTUM.pth) |
 | STDMANet | 92.82 | 2.88 | 0.9860 |
-| Res-U+RFR | 64.65 | 24.09 | 0.8698 |
 | DeepPro | 95.84 | 0.52 | 0.9952 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT__2024-12-28_16-21__SoftLoUloss_DeepPro_DataL40/checkpoints/best_model.pth) |
 | DeepPro-Plus | 99.24 | 1.65 | 0.9955 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT__2024-12-28_16-21__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
@@ -78,7 +77,6 @@ on NUDT-MIRSDT (all)
 | ------------- |:-------------:|:-----:|:-----:|:-----:|
 | Res-UNet+DTUM | 97.46 | 3.00 | 0.9967 | [[Weights]](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM/blob/main/results/ResUNet_DTUM_SpatialDeepSupFalse_fullySup/ResUNet_DTUM.pth) |
 | STDMANet | 96.59 | 3.40 | 0.9908 |
-| Res-U+RFR | 88.61 | 11.58 | 0.9502 |
 | DeepPro | 98.50 | 0.72 | 0.9973 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT__2024-12-28_16-21__SoftLoUloss_DeepPro_DataL40/checkpoints/best_model.pth) |
 | DeepPro-Plus | 99.71 | 2.69 | 0.9978 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT__2024-12-28_16-21__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
@@ -89,7 +87,6 @@ on NUDT-MIRSDT-Noise
 | ------------- |:-------------:|:-----:|:-----:|:-----:|
 | Res-UNet+DTUM | 43.90 | 4.86 | 0.9413 |
 | STDMANet | 51.65 | 1.95 | 0.8766 |
-| Res-U+RFR | 35.11 | 464.92 | 0.8655 |
 | DeepPro | 59.17 | 1.76 | 0.9638 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)__2024-12-27_23-28__SoftLoUloss_DeepPro_DataL40/checkpoints/best_model.pth) |
 | DeepPro-Plus | 76.23 | 1.69 | 0.9171 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/NUDT-MIRSDT-Noise8.0_FJY(g0.15-o1.3)__2024-12-27_23-28__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
@@ -99,7 +96,6 @@ on SatVideoIRSDT
 | Model         | Recall | Precision | F1 score ||
 | ------------- |:------:|:-----:|:-----:|:-----:|
 | Res-UNet+DTUM | 36.41 | 58.94 | 45.40 | [[Weights]](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM/blob/main/results/SatVideoIRSTD_ResUNet_DTUM_SpatialDeepSupFalse_fullySup/ResUNet_DTUM.pth) |
-| Res-UNet+RFR | 55.46 | 0.05 | 0.10 |
 | DNANet+DTUM | 46.42 | 68.66 | 55.39 |
 | DeepPro-Plus | 57.82 | 49.56 | 3.37 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/SatVideoIRSDT__2025-07-22_19-41__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
