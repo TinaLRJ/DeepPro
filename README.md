@@ -97,7 +97,7 @@ on SatVideoIRSDT
 | ------------- |:------:|:-----:|:-----:|:-----:|
 | Res-UNet+DTUM | 36.41 | 58.94 | 45.40 | [[Weights]](https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM/blob/main/results/SatVideoIRSTD_ResUNet_DTUM_SpatialDeepSupFalse_fullySup/ResUNet_DTUM.pth) |
 | DNANet+DTUM | 46.42 | 68.66 | 55.39 |
-| DeepPro-Plus | 57.82 | 49.56 | 3.37 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/SatVideoIRSDT__2025-07-22_19-41__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
+| DeepPro-Plus | 57.82 | 49.56 | 53.37 | [[Weights]](https://github.com/TinaLRJ/DeepPro/tree/main/log/sem_seg/SatVideoIRSDT__2025-07-22_19-41__SoftLoUloss_DeepPro-Plus_DataL40/checkpoints/best_model.pth) |
 
 
 ## Citiation
