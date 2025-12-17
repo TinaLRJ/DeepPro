@@ -27,7 +27,7 @@ Other datasets include NUDT-MIRSDT-HiNo dataset [[download dir]](https://pan.bai
 
 ## SatVideoIRSDT Dataset for SatVideoIRSTD Challenge &nbsp;[**[Homepage]**](https://videoirstd.github.io/)
 
-Training set &nbsp; [[download dir]](https://pan.baidu.com/s/1s5ugYU25ZF29Qvvm_X13oQ?pwd=5wxq) includes 1001 sequences. Validation set &nbsp; [[download dir]](https://pan.baidu.com/s/1OoY5aP_RIQLrMTvSFZs2_g?pwd=5tt8) includes 202 sequences. Test set &nbsp; [[img download dir]](https://pan.baidu.com/s/1GKMsLyW5YkxgXFLV7iyYuQ?pwd=vc78) [[mask download dir]](https://pan.baidu.com/s/1QcqiYtrTJicKr7BlnFefEw?pwd=x8tn) includes 200 sequences. 
+Training set &nbsp; [[download dir]](https://pan.baidu.com/s/1s5ugYU25ZF29Qvvm_X13oQ?pwd=5wxq) includes 1001 sequences. Validation set &nbsp; [[download dir]](https://pan.baidu.com/s/1OoY5aP_RIQLrMTvSFZs2_g?pwd=5tt8) includes 202 sequences. Test set &nbsp; [[img download dir]](https://pan.baidu.com/s/1Gqwl_NX6y6Vs8SskQyfv3A?pwd=vc78) [[mask download dir]](https://pan.baidu.com/s/1QcqiYtrTJicKr7BlnFefEw?pwd=x8tn) includes 200 sequences. 
 
 
 ## Train
