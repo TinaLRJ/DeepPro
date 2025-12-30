@@ -12,7 +12,7 @@ Our work is currently under peer review. The contributions of this work are as f
 ## Requirements
 - Python 3
 - torch
-- tqbm
+- tqdm
 <br><br>
 
 ## Datasets
