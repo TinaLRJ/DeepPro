@@ -132,7 +132,8 @@ on SatVideoIRSDT
   author={Li, Ruojing and Zeng, Yaoyuan and Sheng, Weidong and Li, Boyang and Li, Zhaoxu and Chen, Nuo and Guo, Gaowei and Dou, Zechao and Long, Zhengxing and Luo, Yihang and others},
   doi={10.57760/sciencedb.j00240.00077},
   url={https://doi.org/10.57760/sciencedb.j00240.00077},
-  year={2025}
+  year={2025},
+  publisher={Science Data Bank}
 }
 ```
 
