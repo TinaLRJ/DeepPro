@@ -116,6 +116,26 @@ on SatVideoIRSDT
   publisher={IEEE}
 }
 ```
+
+## Citiation for SatVideoIRSDT Dataset
+```
+@article{li2026satvideodataset,
+  title={Infrared video satellite aerial moving target detection dataset and its evaluation},
+  author={Li, Ruojing and Li, Zhaoxu and Chen, Nuo and Guo, Gaowei and Dou, Zechao and Long, Zhengxing and Luo, Yihang and Zeng, Yaoyuan and Sheng, Weidong and Li, Boyang and others},
+  doi={10.11834/jig.250536},
+  journal={Journal of Image and Graphics},
+  pages={1--15},
+  year={2026}
+}
+@article{li2025dataset,
+  title={Infrared video satellite aerial moving target detection dataset},
+  author={Li, Ruojing and Zeng, Yaoyuan and Sheng, Weidong and Li, Boyang and Li, Zhaoxu and Chen, Nuo and Guo, Gaowei and Dou, Zechao and Long, Zhengxing and Luo, Yihang and others},
+  doi={10.57760/sciencedb.j00240.00077},
+  url={https://doi.org/10.57760/sciencedb.j00240.00077},
+  year={2025}
+}
+```
+
 <br>
 
 ## Contact
