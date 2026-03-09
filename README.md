@@ -3,7 +3,7 @@
 Pytorch implementation of our deep temporal probe network (DeepPro).&nbsp;[**[Paper]**](https://arxiv.org/pdf/2506.12766)
 
 #![Fig1](https://github.com/TinaLRJ/DeepPro/blob/main/fig1/Fig1-doublecolumn.png)![Fig1-dyn](https://github.com/TinaLRJ/DeepPro/blob/main/fig1/TP%20vs%20Short-term%20ST.gif)
-<img src="https://github.com/TinaLRJ/DeepPro/blob/main/fig1/Fig1-doublecolumn.png" width="180" height="105"><img src="https://github.com/TinaLRJ/DeepPro/blob/main/fig1/TP%20vs%20Short-term%20ST.gif" width="140" height="105">
+<img src="https://github.com/TinaLRJ/DeepPro/blob/main/fig1/Fig1-doublecolumn.png" width="100" height="105"><img src="https://github.com/TinaLRJ/DeepPro/blob/main/fig1/TP%20vs%20Short-term%20ST.gif" width="100" height="105">
 
 Our work is currently under peer review. The contributions of this work are as follows:
 
