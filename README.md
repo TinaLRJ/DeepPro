@@ -2,6 +2,8 @@
 
 Pytorch implementation of our deep temporal probe network (DeepPro).&nbsp;[**[Paper]**](https://arxiv.org/pdf/2506.12766)
 
+![Fig 1](fig1/TP vs Short-term ST.gif)
+
 Our work is currently under peer review. The contributions of this work are as follows:
 
 * We reveal some new insights from a more crucial profile (i.e., temporal profile): **long-term temporal information is much more essential for IRST detection**, which includes global temporal saliency of target signals and correlation information between different signals. We validated the importance of the temporal profile in IRST detection, by developing the first predictive attribution tool.
