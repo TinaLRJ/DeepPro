@@ -1,1 +1,257 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<link href="deeppro.css" rel="stylesheet" type="text/css" />
+
+<meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head>
+<body onLoad=" ">
+<div id="container" class="STYLE37">
+
+
+<meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head>
+<body onLoad=" ">
+<div id="container" class="STYLE37">
+
+<br>
+<p class="styleTittle" align="center">Probing Deep into Temporal Profile Makes the Infrared Small Target Detector Much Better</p><br>
+<p style="font-size:16px" align="center"><span class="STYLEAuthor"> 
+</span> 
+</p>
+<p align="center"><span class="STYLEAuthor"> 
+<a href="https://tinalrj.github.io/" target="_blank">Ruojing Li</a>, &nbsp;
+<a>Wei An</a>,&nbsp;
+<a href="https://yingqianwang.github.io/" target="_blank">Yingqian Wang</a>, &nbsp;
+<a>Xinyi Ying</a>,&nbsp;
+<a>Yimian Dai</a>,&nbsp;
+<a href="https://longguangwang.github.io/" target="_blank">Longguang Wang</a>, &nbsp;
+<a>Miao Li</a>,&nbsp;
+<a href="http://www.yulanguo.cn/" target="_blank">Yulan Guo</a>, &nbsp;
+<a>Li Liu</a>&nbsp;
+</span> 
+</p>
+<br>
+
+<p class="STYLESection" align="center">Abstract</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+<div style="padding:20px 20px 20px 20px; font-size=20; color: #333; ">
+	<p style="padding:15px 15px 15px 15px; background-color:#EEE; font-size:16px; font-family:PmingLiu; line-height:23px;", align="justify">
+		Infrared small target (IRST) detection is challenging in simultaneously achieving precise, robust, and efficient performance due to extremely dim targets and strong interference. Current learning-based methods attempt to leverage "more" information from both the spatial and the short-term temporal domains, but suffer from unreliable performance under complex conditions while incurring computational redundancy. In this paper, we explore the "more essential" information from a more crucial domain for the detection. Through theoretical analysis, we reveal that the global temporal saliency and correlation information in the temporal profile demonstrate significant superiority in distinguishing target signals from other signals. To investigate whether such superiority is preferentially leveraged by well-trained networks, we built the first prediction attribution tool in this field and verified the importance of the temporal profile information. Inspired by the above conclusions, we remodel the IRST detection task as a one-dimensional signal anomaly detection task, and propose an efficient deep temporal probe network (DeepPro) that only performs calculations in the time dimension for IRST detection. We conducted extensive experiments to fully validate the effectiveness of our method. The experimental results are exciting, as our DeepPro outperforms existing state-of-the-art IRST detection methods on widely-used benchmarks with extremely high efficiency, and achieves a significant improvement on dim targets and in complex scenarios. We provide a new modeling domain, a new insight, a new method, and a new performance, which can promote the development of IRST detection. Codes are available at https://github.com/TinaLRJ/DeepPro.
+	</p>
+</div>
+<br><br>
+	
+<p class="STYLESection" align="center">Temporal Profile Information</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Fig1.png" width="100%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 1: Visualizations of IRSTs in different scenarios and typical detection difficulties in different domains. 
+	(a, b) Distinct targets in different scenarios (Cases 1, 2, and 3): in appearance, targets and clutters show small inter-class differences, while different targets exhibit marked intra-class variations. 
+	(c1) Infrared image. (c2) Spatial domain: small dim targets are barely observable. (c3) Short-term spatial-temporal (ST) domain: targets are indistinguishable from interferences. 
+	(c4) Temporal profile: records dynamic statistical details of all signals at fixed spatial location, where small dim target signals are complete and more prominent. 
+	The temporal profile contains more essential information. (d, e) More contrasts of the three cases.</p>
+<br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/case 1__TP vs Short-term ST.gif" width="80%"></th></tr></tbody></table>
+<p class="STYLEAuthor" align="center"><b>Case. 1</b></p><br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/case 2__TP vs Short-term ST.gif" width="80%"></th></tr></tbody></table>
+<p class="STYLEAuthor" align="center"><b>Case. 2</b></p><br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/case 3__TP vs Short-term ST.gif" width="80%"></th></tr></tbody></table>
+<p class="STYLEAuthor" align="center"><b>Case. 3</b></p>
+<br><br>
+
+
+<p align="center"><b>What is Temporal Profile Information?</b></p>
+<br>
+<b>1. Global temporal saliency.</b> As a target moves into and out of a detection unit, the target intensity in this unit first increases and then decreases. 
+Assuming that the fluctuations of other signals can be ignored, the target signals are saliency in the temporal profile. 
+The global temporal saliency of the target signals is more robust to distinguish the targets from strong noise and clutter than other domains.
+<br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/temporal_profile_only_real.png" width="75%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 2: Spatial and temporal-profile visualizations of targets in real scenes with noise and clutter. The red annotations mark the targets.</p>
+<br>
+
+<b>2. Correlation information.</b> The temporal profile holds the correlation information between target and noise, which is advantageous to predict the target signal even mixed with extremely strong noise. 
+The temporal profile contains a lot of correlation information between target and clutter, which is reliable to detect the target from even high-intensity clutters.
+<br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/temporal_profile_corr_analysis.png" width="100%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 3: Visualizations of the temporal profiles of target-in-noise(/-clutter) signals and correlation analyses between noise, clutter and target in the temporal profile. 
+	The target signals are same with fixed intensity (maximum is 1), and added to noise and clutter signals with different standard deviations.</p>
+<br><br>
+
+
+<p align="center"><b>How Critical is Temporal Profile Information?</b></p>
+<br>
+<b>Attribution Outcome: Phenomenon 1.</b> The influential pixels in reference frames are mainly distributed around the temporal profile of the target. The core influence region is close to a cylindrical zone along the time axis.
+The results reveal that <i>the temporal profile information of the target is more important for its prediction.</i>
+<br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/attribution_results.png" width="60%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 4: Attribution visualizations of reference frames at targets with different SNRs. For the predictions of the salient targets and the dim targets, the influential pixels are almost concentrated on the temporal profile of the target.</p>
+<br>
+
+<b>Attribution Outcome: Phenomenon 2.</b> The importance of a reference frame changes over time, following a U-shaped curve. Distant information is crucial for predictions like recent information in a period.
+The results reveal that a few adjacent frames are not enough, and distant information is also important for model prediction. In other words, <i>the long-term variations of the signals in the temporal profile are crucial for IRST detection.</i>
+<br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/show_frameMAXAttri.png" width="60%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 5: Temporal variations of the average influence and the influence range of all random seeds in different scenes. (a)-(f) show the temporal variations on the targets with SNR of 1.09, 1.32, 2.52, 4.04, 6.06, and 9.44, respectively. 
+	(g) illustrates the temporal variation in the whole test set.</p>
+<br><br><br>
+
+
+<p class="STYLESection" align="center">Temporal Probe Mechanism</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none"><br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/TPM.png" width="100%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 6: Visualization of the structure of TPro. Firstly, temporal probes are employed to pull out complete temporal features of a single pixel from the split input features. 
+	Then, multiple learnable SCorMs are applied to the gotten features to extract temporal correlation features. This process is performed pixel-wise across all split input features. Finally, all temporal correlation features are concatenated and fused to generate output features. 
+	Due to the learned correlationship among signals, target features are enhanced, and background features are suppressed. Notably, <i>the entire pipeline strictly excludes any space-dimension computations</i>.</p>
+<br><br><br>
+
+
+<p class="STYLESection" align="center">Network Architecture</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none"><br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/architecture_DeepPro.png" width="60%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 7: An overview of our DeepPro. There are three similar levels in our DeepPro. Note that <i>this is the first IRST detection network with calculations (e.g., multiplications and additions) only in the time dimension</i>.</p>
+<br>
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/architecture_DeepPro-Plus.png" width="60%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 8: The framework of our DeepPro-Plus. Different from DeepPro which only calculates in the time dimension, this version incorporates few spatial computations to acquire little spatial information as supplementation.</p>
+<br><br><br>
+
+
+<p class="STYLESection" align="center">Quantitative Results</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+<br>
+<p class="styleCaption" align="justify">Table 1: Detection results achieved by different state-of-the-art methods on the NUDT-MIRSDT dataset and the NUDT-MIRSDT-HiNo dataset. The best results are in bold, and the second-best results are underlined. <i>SF</i> and <i>MF</i> refer to single-frame and multi-frame methods, respectively.</p>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Quantitative1.png" width="100%"></th></tr></tbody></table>
+<br><br>
+
+<p class="styleCaption" align="justify">Table 2: Detection results achieved by different versions of our DeepPro on the NUDT-MIRSDT dataset and the NUDT-MIRSDT-HiNo dataset.</p>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Quantitative2.png" width="100%"></th></tr></tbody></table>
+<br><br>
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/ROCShow.png" width="100%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 9: ROC performances of different methods on the NUDT-MIRSDT dataset and the NUDT-MIRSDT-HiNo dataset. (a) NUDT-MIRSDT (SNR&le;3). (b) NUDT-MIRSDT. (c) NUDT-MIRSDT-HiNo.</p>
+<br><br>
+
+<p class="styleCaption" align="justify">Table 3: Detection results achieved by different state-of-the-art methods on the IRDST-simulation dataset. The best results are in bold, and the second-best results are underlined.</p>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Quantitative4.png" width="47%"></th></tr></tbody></table>
+<br><br>
+
+<p class="styleCaption" align="justify">Table 4: Detection results achieved by different state-of-the-art methods on the real-world RGBT-Tiny dataset.</p>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Quantitative4.png" width="45%"></th></tr></tbody></table>
+<br><br>
+
+<p class="styleCaption" align="justify">Table 5: Detection results achieved by different multi-frame state-of-the-art methods on the large-scale IRSatVideo-LEO dataset.</p>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Quantitative5.png" width="40%"></th></tr></tbody></table>
+<br>
+<br><br><br>
+
+
+<p class="STYLESection" align="center">Qualitative Results</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+<br>
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Visual-simul.png" width="100%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 10: Visual comparison on the NUDT-MIRSDT dataset. (a1-a3) Results on the NUDT-MIRSDT (SNR&le;3) subset. (b1-b3) Results on the NUDT-MIRSDT (SNR&gt; 3) subset. 
+	The first column shows the temporal profile (TP) of the target central pixel. For better visualization, the target area is enlarged in the top-right corner and highlighted with a red circle. The false alarm area is marked with a yellow circle.</p>
+<br><br>
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./Figs/Visual-real.png" width="57%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Fig. 11: Visual comparison on the real-world RGBT-Tiny dataset. For better visualization, the target area is enlarged in the top-left corner and highlighted with a red circle. The false alarm area is marked with a yellow circle.</p>
+<br><br><br><br>
+
+
+
+<div style="padding:10px 0px 5px 0px">
+	<p class="STYLESection" align="center">Materials</p>
+</div>
+<hr align="right", width="85%", style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; margin:auto">
+
+<div style="padding:12px 0px 10px 120px;", class="one" align="center">
+  <div style="float: left" >
+  <a href="https://pan.baidu.com/s/1fVHd_3fAtddda_vyEJh7GA?pwd=5xn3">
+  <img src="./Figs/NUDT-MIRSDT-HiNo.png" height="150">
+  <p style="padding:0px 0px 20px 0px">Dataset</p>
+  </a>
+</div>
+<div >
+  <a href="https://github.com/TinaLRJ/DeepPro">
+  <img src="./Figs/github.jpg" height="150">
+  <p style="padding:0px 0px 20px 0px">Code</p>
+  </a>
+</div>
+</div>
+
+
+<p class="STYLESection" align="center">Citation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<div style="padding:10px 20px 10px 20px; font-size=16; color: #333; ">
+	<p style="padding:20px 20px 20px 20px; background-color:#EEE; font-size:16px; font-family:PmingLiu; line-height:23px;", align="left">
+	@Article{li2025probing,<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;author = {Li, Ruojing and An, Wei and Wang, Yingqian and Ying, Xinyi and Dai, Yimian and Wang, Longguang and Li, Miao and Guo, Yulan and Liu, Li},<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;title = {Probing deep into temporal profile makes the infrared small target detector much better},<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;journal   = {arXiv preprint arXiv:2506.12766},},<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;year      = {2025}<br>
+}
+	</p>
+</div>
+<br><br>
+<br><br><br><br>
+
+
+</pre></div>
+</body></html>
+
