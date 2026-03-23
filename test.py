@@ -46,7 +46,8 @@ def parse_args():
 
 
 def count_parameters(model):
-    return sum(p.numel() for p in model.parameters() if p.requires_grad)*32/8/1000  # K
+    total_bytes = sum(p.numel() * p.element_size() for p in model.parameters())
+    return total_bytes / (1000 ** 2)  # MB (十进制)
 
 
 def main(args):
