@@ -17,6 +17,7 @@ from tqdm import tqdm
 import numpy as np
 import time
 import random
+import torch.nn.functional as F
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
@@ -235,6 +236,8 @@ def main(args):
                     images, targets = images.float().cuda(), targets.float().cuda()
 
                     _, seq_midpred = detector(images)
+                    if seq_midpred.shape[-1] != targets.shape[-1]:
+                        seq_midpred = F.interpolate(seq_midpred, size=targets.shape[-2:])
 
                     loss_g_sum += criterion(seq_midpred, targets)
 
