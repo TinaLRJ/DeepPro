@@ -42,7 +42,7 @@ def seed_everything(seed=46):
 
 def parse_args():
     parser = argparse.ArgumentParser('Model')
-    parser.add_argument('--model', type=str, default='DeepPro', help='model name [default: pointnet_sem_seg]')  # _MultiScale_v2
+    parser.add_argument('--model', type=str, default='DeepPro-Plus', help='model name [default: pointnet_sem_seg]')
     parser.add_argument('--batch_size', type=int, default=4, help='Batch Size during training [default: 16]')
     parser.add_argument('--epoch', default=32, type=int, help='Epoch to run [default: 32]')
     parser.add_argument('--learning_rate', default=0.001, type=float, help='Initial learning rate [default: 0.001]')
@@ -50,7 +50,8 @@ def parse_args():
     parser.add_argument('--gpu_num', type=int, default=1, help='GPU to use')
     parser.add_argument('--optimizer', type=str, default='Adam', help='Adam or SGD [default: Adam]')
     parser.add_argument('--datapath', type=str, default='./datasets/NUDT-MIRSDT')
-    parser.add_argument('--dataset', type=str, default='NUDT-MIRSDT', help='dataset name [default: NUDT-MIRSDT, RGB-T]')
+    parser.add_argument('--dataset', type=str, default='NUDT-MIRSDT', help='dataset name [default: NUDT-MIRSDT, NUDT-MIRSDT-HiNo, '
+                                            'RGB-T, SatVideoIRSDT, IRDST-simulation, IRSatVideo-LEO]')
     parser.add_argument('--log_dir', type=str, default=None, help='Log path [default: None]')
     parser.add_argument('--savepath', type=str, default='./log/', help='Save path [default: ./log/]')
     parser.add_argument('--decay_rate', type=float, default=1e-4, help='weight decay [default: 1e-4]')
