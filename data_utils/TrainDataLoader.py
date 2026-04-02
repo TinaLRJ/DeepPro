@@ -30,6 +30,9 @@ class TrainSeqDataLoader(Dataset):
         elif dataset == 'SatVideoIRSDT':
             self.train_mean = 111.47
             self.train_std = 22.43
+        elif dataset == 'IRSatVideo-LEO':
+            self.train_mean = 72.104
+            self.train_std = 12.303
 
     def __len__(self):
         return int(len(self.samplelist) * self.sample_rate)
@@ -38,6 +41,8 @@ class TrainSeqDataLoader(Dataset):
         image = Image.open(image_path)
         if 'NUDT-MIRSDT' in self.dataset:
             image = image.resize([256, 256])
+        elif self.dataset == 'IRSatVideo-LEO':
+            image = image.resize([512, 512])
         # elif self.dataset == 'RGB-T':
         #     image = image.resize([480, 480])
         image = np.array(image, dtype=np.float32)
@@ -46,6 +51,8 @@ class TrainSeqDataLoader(Dataset):
         label = Image.open(label_path)
         if 'NUDT-MIRSDT' in self.dataset:
             label = label.resize([256, 256])
+        elif self.dataset == 'IRSatVideo-LEO':
+            label = label.resize([512, 512])
         # elif self.dataset == 'RGB-T':
         #     label = label.resize([480, 480])
         label = np.array(label, dtype=np.float32) / 255.
