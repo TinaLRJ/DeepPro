@@ -15,6 +15,7 @@ import numpy as np
 from numpy import *
 import time
 from PIL import Image
+import cv2
 import scipy.io as scio
 from ShootingRules import ShootingRules
 from sklearn.metrics import auc
@@ -173,6 +174,9 @@ def main(args):
                 for ti in range(t):
                     midpred_ti = seq_midpred_all[:, ti, :, :].numpy().copy()
                     centroid_ti  = centroids_all[:, ti, :, :].numpy().copy()
+                    if midpred_ti.shape[-1] != centroid_ti.shape[-1]:
+                        h, w = centroid_ti.shape[-2:]
+                        midpred_ti = cv2.resize(midpred_ti[0, :, :], (w, h))[None, :, :]
                     for th_i in range(len(Th_Seg)):
                         FalseNum, TrueNum, TgtNum = eval(midpred_ti, centroid_ti, Th_Seg[th_i])
                         FalseNumAll[seq_idx, th_i] = FalseNumAll[seq_idx, th_i] + FalseNum
