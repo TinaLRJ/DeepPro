@@ -127,6 +127,8 @@ class TrainIRSeqDataLoader(TrainSeqDataLoader):
             self.seq_list_file = os.path.join(data_root, 'train.txt')
         elif dataset == 'IRDST-simulation':
             self.seq_list_file = os.path.join(data_root, 'img_idx/train_IRDST-simulation.txt')
+        elif dataset == 'IRSatVideo-LEO':
+            self.seq_list_file = os.path.join(data_root, 'annotations/train_sequences.txt')
         self._check_preprocess()
         seq_names = list(dict.fromkeys([x.split('/')[0] for x in self.ann_f]))
 
@@ -138,7 +140,7 @@ class TrainIRSeqDataLoader(TrainSeqDataLoader):
                 label_root = os.path.join(data_root, seq_name, 'masks').replace('NUDT-MIRSDT-Noise/'+dataset, 'NUDT-MIRSDT')
                 images = np.sort(os.listdir(image_root))
                 labels = np.sort(os.listdir(label_root))
-            elif dataset == 'IRDST-simulation':
+            elif dataset in ['IRDST-simulation', 'IRSatVideo-LEO']:
                 image_root = os.path.join(data_root, 'images', seq_name)
                 label_root = os.path.join(data_root, 'masks', seq_name)
                 images = os.listdir(image_root)
