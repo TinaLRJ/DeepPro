@@ -26,12 +26,17 @@ class TestSeqDataLoader(Dataset):
         elif dataset == 'SatVideoIRSDT':
             self.train_mean = 111.47
             self.train_std = 22.43
+        elif dataset == 'IRSatVideo-LEO':
+            self.train_mean = 72.104
+            self.train_std = 12.303
 
     def __len__(self):
         return len(self.samplelist)
 
     def get_image_label(self, image_path, label_path):
         image = Image.open(image_path)
+        if self.dataset == 'IRSatVideo-LEO':
+            image = image.resize([512, 512])
         image = np.array(image, dtype=np.float32)
         if image.ndim == 3:
             image = image[:,:,0]
@@ -110,6 +115,8 @@ class TestIRSeqDataLoader(object):
             self.seq_list_file = os.path.join(data_root, 'img_idx/test_IRDST-simulation.txt')
         elif dataset == 'SatVideoIRSDT':
             self.seq_list_file = os.path.join(data_root, 'val.txt')
+        elif dataset == 'IRSatVideo-LEO':
+            self.seq_list_file = os.path.join(data_root, 'annotations/val_sequences.txt')
         self._check_preprocess()
         self.seq_names = list(dict.fromkeys([x.split('/')[0] for x in self.ann_f]))
         # self.seq_names = list([str(self.ann_f)])
@@ -130,7 +137,7 @@ class TestIRSeqDataLoader(object):
             label_root = os.path.join(self.data_root, 'segmentations', seq_name)
             images = np.sort(os.listdir(image_root))
             labels = np.sort(os.listdir(label_root))
-        elif self.dataset == 'IRDST-simulation':
+        elif self.dataset in ['IRDST-simulation', 'IRSatVideo-LEO']:
             image_root = os.path.join(self.data_root, 'images', seq_name)
             label_root = os.path.join(self.data_root, 'masks', seq_name)
             images = os.listdir(image_root)
