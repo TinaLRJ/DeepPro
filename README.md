@@ -117,6 +117,9 @@ on SatVideoIRSDT
   title={Direction-coded temporal U-shape module for multiframe infrared small target detection},
   author={Li, Ruojing and An, Wei and Xiao, Chao and Li, Boyang and Wang, Yingqian and Li, Miao and Guo, Yulan},
   journal={IEEE Transactions on Neural Networks and Learning Systems},
+  volume={36},
+  number={1},
+  pages={555--568},
   year={2023},
   publisher={IEEE}
 }
