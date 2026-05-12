@@ -106,11 +106,12 @@ on SatVideoIRSDT
 
 ## Citiation
 ```
-@article{li2025probing,
-  title={Probing Deep into Temporal Profile Makes the Infrared Small Target Detector Much Better},
-  author={Li, Ruojing and An, Wei and Ying, Xinyi and Wang, Yingqian and Dai, Yimian and Wang, Longguang and Li, Miao and Guo, Yulan and Liu, Li},
-  journal={arXiv preprint arXiv:2506.12766},
-  year={2025}
+@article{li2026probing,
+  title={Probing deep into temporal profile makes the infrared small target detector much better},
+  author={Li, Ruojing and An, Wei and Wang, Yingqian and Ying, Xinyi and Dai, Yimian and Wang, Longguang and Li, Miao and Guo, Yulan and Liu, Li},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2026},
+  publisher={IEEE}
 }
 @article{li2023direction,
   title={Direction-coded temporal U-shape module for multiframe infrared small target detection},
