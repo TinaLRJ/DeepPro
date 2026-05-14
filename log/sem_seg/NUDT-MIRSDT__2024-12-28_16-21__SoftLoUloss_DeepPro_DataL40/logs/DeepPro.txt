@@ -1,0 +1,342 @@
+2024-12-28 16:21:29,003 - Model - INFO - PARAMETER ...
+2024-12-28 16:21:29,003 - Model - INFO - Namespace(batch_size=4, datapath='/data/lrj/data/NUDT-MIRSDT', dataset='NUDT-MIRSDT', decay_rate=0.0001, epoch=32, gpu='0', gpu_num=1, learning_rate=0.001, log_dir=None, lr_decay=0.7, model='DeepPro', optimizer='Adam', patch_size=128, savepath='/data/lrj/PPA-Net/log/', seqlen=40, step_size=10, threshold=0.01, threshold_eval=0.3)
+2024-12-28 16:21:29,903 - Model - INFO - The number of training data is: 768
+2024-12-28 16:21:29,903 - Model - INFO - The number of test data is: 20 sequences
+2024-12-28 16:21:30,950 - Model - INFO - No existing model, starting training from scratch...
+2024-12-28 16:21:30,950 - Model - INFO - **** Epoch 1 (1/32) ****
+2024-12-28 16:21:30,950 - Model - INFO - Learning rate:0.001000
+2024-12-28 16:24:47,466 - Model - INFO - Training mean loss: 0.995992
+2024-12-28 16:24:47,467 - Model - INFO - Training accuracy (IoU) of prediction: 0.002258
+2024-12-28 16:24:47,467 - Model - INFO - ---- EPOCH 001 EVALUATION ----
+2024-12-28 16:24:59,770 - Model - INFO - Eval mean loss: 0.997302
+2024-12-28 16:24:59,770 - Model - INFO - Eval avg class IoU of prediction: 0.003426
+2024-12-28 16:24:59,770 - Model - INFO - Save model...
+2024-12-28 16:24:59,770 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 16:24:59,887 - Model - INFO - Saving model....
+2024-12-28 16:24:59,887 - Model - INFO - Best mIoU_mid: 0.003426
+2024-12-28 16:24:59,887 - Model - INFO - **** Epoch 2 (2/32) ****
+2024-12-28 16:24:59,887 - Model - INFO - Learning rate:0.001000
+2024-12-28 16:29:19,311 - Model - INFO - Training mean loss: 0.961956
+2024-12-28 16:29:19,311 - Model - INFO - Training accuracy (IoU) of prediction: 0.004254
+2024-12-28 16:29:19,312 - Model - INFO - ---- EPOCH 002 EVALUATION ----
+2024-12-28 16:29:37,431 - Model - INFO - Eval mean loss: 0.928608
+2024-12-28 16:29:37,432 - Model - INFO - Eval avg class IoU of prediction: 0.000883
+2024-12-28 16:29:37,432 - Model - INFO - Best mIoU_mid: 0.003426
+2024-12-28 16:29:37,432 - Model - INFO - **** Epoch 3 (3/32) ****
+2024-12-28 16:29:37,432 - Model - INFO - Learning rate:0.001000
+2024-12-28 16:35:11,750 - Model - INFO - Training mean loss: 0.878073
+2024-12-28 16:35:11,750 - Model - INFO - Training accuracy (IoU) of prediction: 0.007519
+2024-12-28 16:35:11,751 - Model - INFO - ---- EPOCH 003 EVALUATION ----
+2024-12-28 16:35:29,479 - Model - INFO - Eval mean loss: 0.871792
+2024-12-28 16:35:29,479 - Model - INFO - Eval avg class IoU of prediction: 0.004672
+2024-12-28 16:35:29,479 - Model - INFO - Save model...
+2024-12-28 16:35:29,479 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 16:35:29,517 - Model - INFO - Saving model....
+2024-12-28 16:35:29,518 - Model - INFO - Best mIoU_mid: 0.004672
+2024-12-28 16:35:29,518 - Model - INFO - **** Epoch 4 (4/32) ****
+2024-12-28 16:35:29,518 - Model - INFO - Learning rate:0.001000
+2024-12-28 16:40:59,647 - Model - INFO - Training mean loss: 0.688481
+2024-12-28 16:40:59,647 - Model - INFO - Training accuracy (IoU) of prediction: 0.340020
+2024-12-28 16:40:59,648 - Model - INFO - ---- EPOCH 004 EVALUATION ----
+2024-12-28 16:41:17,715 - Model - INFO - Eval mean loss: 0.683821
+2024-12-28 16:41:17,715 - Model - INFO - Eval avg class IoU of prediction: 0.417436
+2024-12-28 16:41:17,715 - Model - INFO - Save model...
+2024-12-28 16:41:17,715 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 16:41:17,751 - Model - INFO - Saving model....
+2024-12-28 16:41:17,751 - Model - INFO - Best mIoU_mid: 0.417436
+2024-12-28 16:41:17,751 - Model - INFO - **** Epoch 5 (5/32) ****
+2024-12-28 16:41:17,751 - Model - INFO - Learning rate:0.001000
+2024-12-28 16:46:47,359 - Model - INFO - Training mean loss: 0.633582
+2024-12-28 16:46:47,359 - Model - INFO - Training accuracy (IoU) of prediction: 0.391988
+2024-12-28 16:46:47,359 - Model - INFO - Save model...
+2024-12-28 16:46:47,359 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/epoch_5_model.pth
+2024-12-28 16:46:47,396 - Model - INFO - Saving model....
+2024-12-28 16:46:47,397 - Model - INFO - ---- EPOCH 005 EVALUATION ----
+2024-12-28 16:47:04,679 - Model - INFO - Eval mean loss: 0.559475
+2024-12-28 16:47:04,679 - Model - INFO - Eval avg class IoU of prediction: 0.487721
+2024-12-28 16:47:04,679 - Model - INFO - Save model...
+2024-12-28 16:47:04,679 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 16:47:04,723 - Model - INFO - Saving model....
+2024-12-28 16:47:04,723 - Model - INFO - Best mIoU_mid: 0.487721
+2024-12-28 16:47:04,723 - Model - INFO - **** Epoch 6 (6/32) ****
+2024-12-28 16:47:04,723 - Model - INFO - Learning rate:0.001000
+2024-12-28 16:52:34,113 - Model - INFO - Training mean loss: 0.575102
+2024-12-28 16:52:34,113 - Model - INFO - Training accuracy (IoU) of prediction: 0.435390
+2024-12-28 16:52:34,115 - Model - INFO - ---- EPOCH 006 EVALUATION ----
+2024-12-28 16:52:52,343 - Model - INFO - Eval mean loss: 0.524066
+2024-12-28 16:52:52,343 - Model - INFO - Eval avg class IoU of prediction: 0.504717
+2024-12-28 16:52:52,343 - Model - INFO - Save model...
+2024-12-28 16:52:52,343 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 16:52:52,400 - Model - INFO - Saving model....
+2024-12-28 16:52:52,401 - Model - INFO - Best mIoU_mid: 0.504717
+2024-12-28 16:52:52,401 - Model - INFO - **** Epoch 7 (7/32) ****
+2024-12-28 16:52:52,401 - Model - INFO - Learning rate:0.001000
+2024-12-28 16:58:27,812 - Model - INFO - Training mean loss: 0.522136
+2024-12-28 16:58:27,813 - Model - INFO - Training accuracy (IoU) of prediction: 0.473525
+2024-12-28 16:58:27,813 - Model - INFO - ---- EPOCH 007 EVALUATION ----
+2024-12-28 16:58:45,952 - Model - INFO - Eval mean loss: 0.464500
+2024-12-28 16:58:45,952 - Model - INFO - Eval avg class IoU of prediction: 0.563679
+2024-12-28 16:58:45,952 - Model - INFO - Save model...
+2024-12-28 16:58:45,952 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 16:58:45,987 - Model - INFO - Saving model....
+2024-12-28 16:58:45,987 - Model - INFO - Best mIoU_mid: 0.563679
+2024-12-28 16:58:45,987 - Model - INFO - **** Epoch 8 (8/32) ****
+2024-12-28 16:58:45,987 - Model - INFO - Learning rate:0.001000
+2024-12-28 17:04:22,011 - Model - INFO - Training mean loss: 0.463012
+2024-12-28 17:04:22,011 - Model - INFO - Training accuracy (IoU) of prediction: 0.517560
+2024-12-28 17:04:22,012 - Model - INFO - ---- EPOCH 008 EVALUATION ----
+2024-12-28 17:04:39,106 - Model - INFO - Eval mean loss: 0.355895
+2024-12-28 17:04:39,106 - Model - INFO - Eval avg class IoU of prediction: 0.682464
+2024-12-28 17:04:39,106 - Model - INFO - Save model...
+2024-12-28 17:04:39,107 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:04:39,169 - Model - INFO - Saving model....
+2024-12-28 17:04:39,169 - Model - INFO - Best mIoU_mid: 0.682464
+2024-12-28 17:04:39,169 - Model - INFO - **** Epoch 9 (9/32) ****
+2024-12-28 17:04:39,169 - Model - INFO - Learning rate:0.001000
+2024-12-28 17:10:03,478 - Model - INFO - Training mean loss: 0.423783
+2024-12-28 17:10:03,478 - Model - INFO - Training accuracy (IoU) of prediction: 0.535322
+2024-12-28 17:10:03,479 - Model - INFO - ---- EPOCH 009 EVALUATION ----
+2024-12-28 17:10:21,492 - Model - INFO - Eval mean loss: 0.335044
+2024-12-28 17:10:21,492 - Model - INFO - Eval avg class IoU of prediction: 0.697403
+2024-12-28 17:10:21,492 - Model - INFO - Save model...
+2024-12-28 17:10:21,492 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:10:21,527 - Model - INFO - Saving model....
+2024-12-28 17:10:21,527 - Model - INFO - Best mIoU_mid: 0.697403
+2024-12-28 17:10:21,527 - Model - INFO - **** Epoch 10 (10/32) ****
+2024-12-28 17:10:21,527 - Model - INFO - Learning rate:0.001000
+2024-12-28 17:15:48,336 - Model - INFO - Training mean loss: 0.394060
+2024-12-28 17:15:48,336 - Model - INFO - Training accuracy (IoU) of prediction: 0.552325
+2024-12-28 17:15:48,336 - Model - INFO - Save model...
+2024-12-28 17:15:48,336 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/epoch_10_model.pth
+2024-12-28 17:15:48,369 - Model - INFO - Saving model....
+2024-12-28 17:15:48,370 - Model - INFO - ---- EPOCH 010 EVALUATION ----
+2024-12-28 17:16:05,553 - Model - INFO - Eval mean loss: 0.308425
+2024-12-28 17:16:05,553 - Model - INFO - Eval avg class IoU of prediction: 0.731209
+2024-12-28 17:16:05,553 - Model - INFO - Save model...
+2024-12-28 17:16:05,553 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:16:05,604 - Model - INFO - Saving model....
+2024-12-28 17:16:05,604 - Model - INFO - Best mIoU_mid: 0.731209
+2024-12-28 17:16:05,604 - Model - INFO - **** Epoch 11 (11/32) ****
+2024-12-28 17:16:05,604 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:21:34,844 - Model - INFO - Training mean loss: 0.395103
+2024-12-28 17:21:34,844 - Model - INFO - Training accuracy (IoU) of prediction: 0.556799
+2024-12-28 17:21:34,845 - Model - INFO - ---- EPOCH 011 EVALUATION ----
+2024-12-28 17:21:52,201 - Model - INFO - Eval mean loss: 0.290330
+2024-12-28 17:21:52,201 - Model - INFO - Eval avg class IoU of prediction: 0.743355
+2024-12-28 17:21:52,201 - Model - INFO - Save model...
+2024-12-28 17:21:52,202 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:21:52,243 - Model - INFO - Saving model....
+2024-12-28 17:21:52,243 - Model - INFO - Best mIoU_mid: 0.743355
+2024-12-28 17:21:52,243 - Model - INFO - **** Epoch 12 (12/32) ****
+2024-12-28 17:21:52,243 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:27:22,926 - Model - INFO - Training mean loss: 0.407068
+2024-12-28 17:27:22,926 - Model - INFO - Training accuracy (IoU) of prediction: 0.564805
+2024-12-28 17:27:22,927 - Model - INFO - ---- EPOCH 012 EVALUATION ----
+2024-12-28 17:27:41,382 - Model - INFO - Eval mean loss: 0.287705
+2024-12-28 17:27:41,383 - Model - INFO - Eval avg class IoU of prediction: 0.736006
+2024-12-28 17:27:41,383 - Model - INFO - Best mIoU_mid: 0.743355
+2024-12-28 17:27:41,383 - Model - INFO - **** Epoch 13 (13/32) ****
+2024-12-28 17:27:41,383 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:33:26,525 - Model - INFO - Training mean loss: 0.366333
+2024-12-28 17:33:26,525 - Model - INFO - Training accuracy (IoU) of prediction: 0.575571
+2024-12-28 17:33:26,526 - Model - INFO - ---- EPOCH 013 EVALUATION ----
+2024-12-28 17:33:43,430 - Model - INFO - Eval mean loss: 0.266799
+2024-12-28 17:33:43,430 - Model - INFO - Eval avg class IoU of prediction: 0.778612
+2024-12-28 17:33:43,430 - Model - INFO - Save model...
+2024-12-28 17:33:43,430 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:33:43,467 - Model - INFO - Saving model....
+2024-12-28 17:33:43,467 - Model - INFO - Best mIoU_mid: 0.778612
+2024-12-28 17:33:43,467 - Model - INFO - **** Epoch 14 (14/32) ****
+2024-12-28 17:33:43,467 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:39:07,944 - Model - INFO - Training mean loss: 0.365739
+2024-12-28 17:39:07,944 - Model - INFO - Training accuracy (IoU) of prediction: 0.577521
+2024-12-28 17:39:07,945 - Model - INFO - ---- EPOCH 014 EVALUATION ----
+2024-12-28 17:39:25,769 - Model - INFO - Eval mean loss: 0.262554
+2024-12-28 17:39:25,770 - Model - INFO - Eval avg class IoU of prediction: 0.783851
+2024-12-28 17:39:25,770 - Model - INFO - Save model...
+2024-12-28 17:39:25,770 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:39:25,808 - Model - INFO - Saving model....
+2024-12-28 17:39:25,808 - Model - INFO - Best mIoU_mid: 0.783851
+2024-12-28 17:39:25,808 - Model - INFO - **** Epoch 15 (15/32) ****
+2024-12-28 17:39:25,808 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:44:16,595 - Model - INFO - Training mean loss: 0.372471
+2024-12-28 17:44:16,595 - Model - INFO - Training accuracy (IoU) of prediction: 0.568907
+2024-12-28 17:44:16,620 - Model - INFO - Save model...
+2024-12-28 17:44:16,620 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/epoch_15_model.pth
+2024-12-28 17:44:16,655 - Model - INFO - Saving model....
+2024-12-28 17:44:16,656 - Model - INFO - ---- EPOCH 015 EVALUATION ----
+2024-12-28 17:44:31,172 - Model - INFO - Eval mean loss: 0.267489
+2024-12-28 17:44:31,172 - Model - INFO - Eval avg class IoU of prediction: 0.774577
+2024-12-28 17:44:31,172 - Model - INFO - Best mIoU_mid: 0.783851
+2024-12-28 17:44:31,172 - Model - INFO - **** Epoch 16 (16/32) ****
+2024-12-28 17:44:31,173 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:48:53,652 - Model - INFO - Training mean loss: 0.369319
+2024-12-28 17:48:53,653 - Model - INFO - Training accuracy (IoU) of prediction: 0.586144
+2024-12-28 17:48:53,653 - Model - INFO - ---- EPOCH 016 EVALUATION ----
+2024-12-28 17:49:09,609 - Model - INFO - Eval mean loss: 0.261432
+2024-12-28 17:49:09,610 - Model - INFO - Eval avg class IoU of prediction: 0.784456
+2024-12-28 17:49:09,610 - Model - INFO - Save model...
+2024-12-28 17:49:09,610 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:49:09,644 - Model - INFO - Saving model....
+2024-12-28 17:49:09,644 - Model - INFO - Best mIoU_mid: 0.784456
+2024-12-28 17:49:09,644 - Model - INFO - **** Epoch 17 (17/32) ****
+2024-12-28 17:49:09,645 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:53:35,880 - Model - INFO - Training mean loss: 0.363029
+2024-12-28 17:53:35,880 - Model - INFO - Training accuracy (IoU) of prediction: 0.579315
+2024-12-28 17:53:35,881 - Model - INFO - ---- EPOCH 017 EVALUATION ----
+2024-12-28 17:53:51,515 - Model - INFO - Eval mean loss: 0.251627
+2024-12-28 17:53:51,515 - Model - INFO - Eval avg class IoU of prediction: 0.793873
+2024-12-28 17:53:51,515 - Model - INFO - Save model...
+2024-12-28 17:53:51,515 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:53:51,548 - Model - INFO - Saving model....
+2024-12-28 17:53:51,548 - Model - INFO - Best mIoU_mid: 0.793873
+2024-12-28 17:53:51,548 - Model - INFO - **** Epoch 18 (18/32) ****
+2024-12-28 17:53:51,548 - Model - INFO - Learning rate:0.000700
+2024-12-28 17:57:42,318 - Model - INFO - Training mean loss: 0.351498
+2024-12-28 17:57:42,318 - Model - INFO - Training accuracy (IoU) of prediction: 0.592081
+2024-12-28 17:57:42,318 - Model - INFO - ---- EPOCH 018 EVALUATION ----
+2024-12-28 17:57:55,861 - Model - INFO - Eval mean loss: 0.242132
+2024-12-28 17:57:55,861 - Model - INFO - Eval avg class IoU of prediction: 0.808166
+2024-12-28 17:57:55,861 - Model - INFO - Save model...
+2024-12-28 17:57:55,861 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 17:57:55,893 - Model - INFO - Saving model....
+2024-12-28 17:57:55,893 - Model - INFO - Best mIoU_mid: 0.808166
+2024-12-28 17:57:55,893 - Model - INFO - **** Epoch 19 (19/32) ****
+2024-12-28 17:57:55,893 - Model - INFO - Learning rate:0.000700
+2024-12-28 18:01:25,257 - Model - INFO - Training mean loss: 0.363543
+2024-12-28 18:01:25,258 - Model - INFO - Training accuracy (IoU) of prediction: 0.585519
+2024-12-28 18:01:25,258 - Model - INFO - ---- EPOCH 019 EVALUATION ----
+2024-12-28 18:01:38,692 - Model - INFO - Eval mean loss: 0.255704
+2024-12-28 18:01:38,692 - Model - INFO - Eval avg class IoU of prediction: 0.787398
+2024-12-28 18:01:38,692 - Model - INFO - Best mIoU_mid: 0.808166
+2024-12-28 18:01:38,692 - Model - INFO - **** Epoch 20 (20/32) ****
+2024-12-28 18:01:38,693 - Model - INFO - Learning rate:0.000700
+2024-12-28 18:05:05,161 - Model - INFO - Training mean loss: 0.364217
+2024-12-28 18:05:05,161 - Model - INFO - Training accuracy (IoU) of prediction: 0.589546
+2024-12-28 18:05:05,161 - Model - INFO - Save model...
+2024-12-28 18:05:05,161 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/epoch_20_model.pth
+2024-12-28 18:05:05,194 - Model - INFO - Saving model....
+2024-12-28 18:05:05,194 - Model - INFO - ---- EPOCH 020 EVALUATION ----
+2024-12-28 18:05:18,615 - Model - INFO - Eval mean loss: 0.258860
+2024-12-28 18:05:18,616 - Model - INFO - Eval avg class IoU of prediction: 0.795784
+2024-12-28 18:05:18,616 - Model - INFO - Best mIoU_mid: 0.808166
+2024-12-28 18:05:18,616 - Model - INFO - **** Epoch 21 (21/32) ****
+2024-12-28 18:05:18,616 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:08:47,918 - Model - INFO - Training mean loss: 0.357919
+2024-12-28 18:08:47,918 - Model - INFO - Training accuracy (IoU) of prediction: 0.588994
+2024-12-28 18:08:47,919 - Model - INFO - ---- EPOCH 021 EVALUATION ----
+2024-12-28 18:09:00,470 - Model - INFO - Eval mean loss: 0.239787
+2024-12-28 18:09:00,470 - Model - INFO - Eval avg class IoU of prediction: 0.812721
+2024-12-28 18:09:00,470 - Model - INFO - Save model...
+2024-12-28 18:09:00,470 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 18:09:00,515 - Model - INFO - Saving model....
+2024-12-28 18:09:00,515 - Model - INFO - Best mIoU_mid: 0.812721
+2024-12-28 18:09:00,515 - Model - INFO - **** Epoch 22 (22/32) ****
+2024-12-28 18:09:00,515 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:12:27,108 - Model - INFO - Training mean loss: 0.346034
+2024-12-28 18:12:27,108 - Model - INFO - Training accuracy (IoU) of prediction: 0.594044
+2024-12-28 18:12:27,108 - Model - INFO - ---- EPOCH 022 EVALUATION ----
+2024-12-28 18:12:40,080 - Model - INFO - Eval mean loss: 0.229226
+2024-12-28 18:12:40,081 - Model - INFO - Eval avg class IoU of prediction: 0.823704
+2024-12-28 18:12:40,081 - Model - INFO - Save model...
+2024-12-28 18:12:40,081 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 18:12:40,115 - Model - INFO - Saving model....
+2024-12-28 18:12:40,115 - Model - INFO - Best mIoU_mid: 0.823704
+2024-12-28 18:12:40,115 - Model - INFO - **** Epoch 23 (23/32) ****
+2024-12-28 18:12:40,115 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:16:13,440 - Model - INFO - Training mean loss: 0.337397
+2024-12-28 18:16:13,440 - Model - INFO - Training accuracy (IoU) of prediction: 0.597478
+2024-12-28 18:16:13,440 - Model - INFO - ---- EPOCH 023 EVALUATION ----
+2024-12-28 18:16:26,985 - Model - INFO - Eval mean loss: 0.229672
+2024-12-28 18:16:26,985 - Model - INFO - Eval avg class IoU of prediction: 0.828047
+2024-12-28 18:16:26,985 - Model - INFO - Save model...
+2024-12-28 18:16:26,985 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 18:16:27,019 - Model - INFO - Saving model....
+2024-12-28 18:16:27,019 - Model - INFO - Best mIoU_mid: 0.828047
+2024-12-28 18:16:27,019 - Model - INFO - **** Epoch 24 (24/32) ****
+2024-12-28 18:16:27,019 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:19:53,937 - Model - INFO - Training mean loss: 0.351712
+2024-12-28 18:19:53,937 - Model - INFO - Training accuracy (IoU) of prediction: 0.595922
+2024-12-28 18:19:53,938 - Model - INFO - ---- EPOCH 024 EVALUATION ----
+2024-12-28 18:20:07,077 - Model - INFO - Eval mean loss: 0.244953
+2024-12-28 18:20:07,077 - Model - INFO - Eval avg class IoU of prediction: 0.800329
+2024-12-28 18:20:07,077 - Model - INFO - Best mIoU_mid: 0.828047
+2024-12-28 18:20:07,077 - Model - INFO - **** Epoch 25 (25/32) ****
+2024-12-28 18:20:07,077 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:23:38,994 - Model - INFO - Training mean loss: 0.345038
+2024-12-28 18:23:38,994 - Model - INFO - Training accuracy (IoU) of prediction: 0.598453
+2024-12-28 18:23:38,994 - Model - INFO - Save model...
+2024-12-28 18:23:38,994 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/epoch_25_model.pth
+2024-12-28 18:23:39,028 - Model - INFO - Saving model....
+2024-12-28 18:23:39,028 - Model - INFO - ---- EPOCH 025 EVALUATION ----
+2024-12-28 18:23:51,597 - Model - INFO - Eval mean loss: 0.228916
+2024-12-28 18:23:51,597 - Model - INFO - Eval avg class IoU of prediction: 0.825000
+2024-12-28 18:23:51,597 - Model - INFO - Best mIoU_mid: 0.828047
+2024-12-28 18:23:51,597 - Model - INFO - **** Epoch 26 (26/32) ****
+2024-12-28 18:23:51,597 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:27:21,108 - Model - INFO - Training mean loss: 0.327985
+2024-12-28 18:27:21,109 - Model - INFO - Training accuracy (IoU) of prediction: 0.599792
+2024-12-28 18:27:21,109 - Model - INFO - ---- EPOCH 026 EVALUATION ----
+2024-12-28 18:27:35,006 - Model - INFO - Eval mean loss: 0.234362
+2024-12-28 18:27:35,006 - Model - INFO - Eval avg class IoU of prediction: 0.817727
+2024-12-28 18:27:35,006 - Model - INFO - Best mIoU_mid: 0.828047
+2024-12-28 18:27:35,007 - Model - INFO - **** Epoch 27 (27/32) ****
+2024-12-28 18:27:35,007 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:31:03,505 - Model - INFO - Training mean loss: 0.335955
+2024-12-28 18:31:03,506 - Model - INFO - Training accuracy (IoU) of prediction: 0.605665
+2024-12-28 18:31:03,506 - Model - INFO - ---- EPOCH 027 EVALUATION ----
+2024-12-28 18:31:16,740 - Model - INFO - Eval mean loss: 0.233959
+2024-12-28 18:31:16,740 - Model - INFO - Eval avg class IoU of prediction: 0.815549
+2024-12-28 18:31:16,740 - Model - INFO - Best mIoU_mid: 0.828047
+2024-12-28 18:31:16,740 - Model - INFO - **** Epoch 28 (28/32) ****
+2024-12-28 18:31:16,740 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:34:44,678 - Model - INFO - Training mean loss: 0.346147
+2024-12-28 18:34:44,679 - Model - INFO - Training accuracy (IoU) of prediction: 0.596843
+2024-12-28 18:34:44,679 - Model - INFO - ---- EPOCH 028 EVALUATION ----
+2024-12-28 18:34:58,269 - Model - INFO - Eval mean loss: 0.219667
+2024-12-28 18:34:58,269 - Model - INFO - Eval avg class IoU of prediction: 0.838115
+2024-12-28 18:34:58,269 - Model - INFO - Save model...
+2024-12-28 18:34:58,269 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 18:34:58,302 - Model - INFO - Saving model....
+2024-12-28 18:34:58,303 - Model - INFO - Best mIoU_mid: 0.838115
+2024-12-28 18:34:58,303 - Model - INFO - **** Epoch 29 (29/32) ****
+2024-12-28 18:34:58,303 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:38:27,139 - Model - INFO - Training mean loss: 0.342142
+2024-12-28 18:38:27,139 - Model - INFO - Training accuracy (IoU) of prediction: 0.604641
+2024-12-28 18:38:27,140 - Model - INFO - ---- EPOCH 029 EVALUATION ----
+2024-12-28 18:38:41,013 - Model - INFO - Eval mean loss: 0.230323
+2024-12-28 18:38:41,013 - Model - INFO - Eval avg class IoU of prediction: 0.817264
+2024-12-28 18:38:41,013 - Model - INFO - Best mIoU_mid: 0.838115
+2024-12-28 18:38:41,013 - Model - INFO - **** Epoch 30 (30/32) ****
+2024-12-28 18:38:41,013 - Model - INFO - Learning rate:0.000490
+2024-12-28 18:42:08,580 - Model - INFO - Training mean loss: 0.339286
+2024-12-28 18:42:08,580 - Model - INFO - Training accuracy (IoU) of prediction: 0.604550
+2024-12-28 18:42:08,580 - Model - INFO - Save model...
+2024-12-28 18:42:08,580 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/epoch_30_model.pth
+2024-12-28 18:42:08,615 - Model - INFO - Saving model....
+2024-12-28 18:42:08,616 - Model - INFO - ---- EPOCH 030 EVALUATION ----
+2024-12-28 18:42:22,696 - Model - INFO - Eval mean loss: 0.221481
+2024-12-28 18:42:22,696 - Model - INFO - Eval avg class IoU of prediction: 0.833295
+2024-12-28 18:42:22,696 - Model - INFO - Best mIoU_mid: 0.838115
+2024-12-28 18:42:22,697 - Model - INFO - **** Epoch 31 (31/32) ****
+2024-12-28 18:42:22,697 - Model - INFO - Learning rate:0.000343
+2024-12-28 18:45:51,993 - Model - INFO - Training mean loss: 0.328018
+2024-12-28 18:45:51,993 - Model - INFO - Training accuracy (IoU) of prediction: 0.595913
+2024-12-28 18:45:51,994 - Model - INFO - ---- EPOCH 031 EVALUATION ----
+2024-12-28 18:46:04,758 - Model - INFO - Eval mean loss: 0.217906
+2024-12-28 18:46:04,759 - Model - INFO - Eval avg class IoU of prediction: 0.836198
+2024-12-28 18:46:04,759 - Model - INFO - Best mIoU_mid: 0.838115
+2024-12-28 18:46:04,759 - Model - INFO - **** Epoch 32 (32/32) ****
+2024-12-28 18:46:04,759 - Model - INFO - Learning rate:0.000343
+2024-12-28 18:49:36,304 - Model - INFO - Training mean loss: 0.331165
+2024-12-28 18:49:36,304 - Model - INFO - Training accuracy (IoU) of prediction: 0.606321
+2024-12-28 18:49:36,304 - Model - INFO - Save model...
+2024-12-28 18:49:36,304 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/epoch_32_model.pth
+2024-12-28 18:49:36,337 - Model - INFO - Saving model....
+2024-12-28 18:49:36,338 - Model - INFO - ---- EPOCH 032 EVALUATION ----
+2024-12-28 18:49:49,668 - Model - INFO - Eval mean loss: 0.218578
+2024-12-28 18:49:49,668 - Model - INFO - Eval avg class IoU of prediction: 0.839028
+2024-12-28 18:49:49,668 - Model - INFO - Save model...
+2024-12-28 18:49:49,668 - Model - INFO - Saving at /data/lrj/PPA-Net/log/sem_seg/IR__2024-12-28_16-21__SoftLoUloss_1*1Conv_MultiScale_v2_Head4_NewTrainDL40/checkpoints/best_model.pth
+2024-12-28 18:49:49,701 - Model - INFO - Saving model....
+2024-12-28 18:49:49,701 - Model - INFO - Best mIoU_mid: 0.839028
